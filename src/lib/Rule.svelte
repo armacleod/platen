@@ -2,7 +2,7 @@
   let { strong = false, label = '' } = $props();
 </script>
 
-<div class={['quire-rule', strong && 'strong']}>
+<div class={['quire-rule', strong && 'strong']} role="separator">
   {#if label}
     <span>{label}</span>
   {/if}
@@ -25,7 +25,7 @@
 
   span {
     font: var(--type-label);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--fg-subtle);
     background: var(--bg);

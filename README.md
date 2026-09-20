@@ -1,12 +1,13 @@
-# Quire
+# Quire 1.0
 
-A design system for sites and Svelte apps that should feel like a mid-century aerospace annual report that learned tokens from IBM Carbon.
+A design system for sites and Svelte apps: the ledger and the void.
 
 **Specimen:** [armacleod.github.io/quire](https://armacleod.github.io/quire)
+**Spec:** [DESIGN.md](./DESIGN.md)
 
-Carbon is systematic. The Nitsche-era General Dynamics reports were systematic *and* warm: paper, ink, orbital color, cinematic pacing, hairline rules. Quire keeps Carbon’s discipline (role-based tokens, an 8px spacing scale, explicit states) and drops the fluorescent blue, the gray-on-gray layering, and the clinical flatness.
-
-**Not a Carbon fork.** Steal the *method*. Leave the IBM livery.
+A sheet field for work, a void field for orientation. Every page uses both.
+One signal hue (ember). Slate structures. Grotesk type set by width and weight.
+Section-cut geometry. No shadows.
 
 ## Use it
 
@@ -14,15 +15,16 @@ Carbon is systematic. The Nitsche-era General Dynamics reports were systematic *
 @import './tokens/tokens.css';
 ```
 
-Or copy `src/lib` into a SvelteKit project. See [DESIGN.md](./DESIGN.md).
+Copy `src/lib` into a Svelte project. Primitives: Button, Field, Panel,
+Rule, Badge, Notice, Tabs, Dialog. See DESIGN.md.
 
 ## Stack
 
-- Tokens: plain CSS custom properties
+- Tokens: plain CSS custom properties, three tiers
 - Components: Svelte 5
-- Type: Newsreader + Source Sans 3 + IBM Plex Mono
+- Type: Archivo (Expanded display) + IBM Plex Mono
 - Reference site: `index.html` (self-contained), deployed via GitHub Pages
 
 ## Themes
 
-`data-theme="paper"` (default) and `data-theme="night"` on `<html>`.
+`data-theme="sheet"` (default) and `data-theme="void"` on `<html>`.

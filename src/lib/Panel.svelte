@@ -1,8 +1,8 @@
 <script>
-  let { kicker = '', title = '', atmosphere = false, children } = $props();
+  let { kicker = '', title = '', ground = 'sheet', children } = $props();
 </script>
 
-<section class={['quire-panel', atmosphere && 'atmosphere']}>
+<section class={['quire-panel', ground]}>
   {#if kicker}
     <p class="quire-kicker">{kicker}</p>
   {/if}
@@ -20,8 +20,15 @@
     padding: var(--s-06);
   }
 
-  .atmosphere {
-    background-image: var(--grad-atmosphere);
+  .quire-panel.void {
+    background: var(--q-void);
+    color: #f0eee7;
+    border-color: #2c333c;
+    background-image: var(--grad-void-bloom);
+  }
+
+  .quire-panel.fountain {
+    background-image: var(--grad-fountain);
   }
 
   h2 {

@@ -1,69 +1,173 @@
 <!doctype html>
-<html lang="en" data-theme="paper">
+<html lang="en" data-theme="sheet">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quire — reference</title>
-  <meta name="description" content="Quire design system specimen." />
+  <title>Quire 1.0 — Ledger and the Void</title>
+  <meta name="description" content="Quire 1.0 design system specimen: the ledger and the void." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    :root,[data-theme=paper]{color-scheme:light;--paper-0:#f6efe2;--paper-1:#efe6d4;--ink-0:#1c1814;--ink-1:#4a433a;--ink-2:#7a7166;--oxide:#c45c1a;--oxide-deep:#9a4310;--oxide-mist:#f3d9c4;--orbit:#2f5f63;--orbit-mist:#d5e2e0;--signal:#9b2f2a;--bg:var(--paper-0);--bg-subtle:var(--paper-1);--bg-inverse:var(--ink-0);--fg:var(--ink-0);--fg-muted:var(--ink-1);--fg-subtle:var(--ink-2);--fg-inverse:var(--paper-0);--accent:var(--oxide);--accent-hover:var(--oxide-deep);--accent-muted:var(--oxide-mist);--struct:var(--orbit);--struct-muted:var(--orbit-mist);--danger:var(--signal);--border:#d4c7b0;--border-strong:var(--ink-0);--focus:var(--oxide);--grad-atmosphere:linear-gradient(165deg,var(--bg) 0%,var(--struct-muted) 100%);--grad-scope:radial-gradient(120% 80% at 80% 0%,var(--accent-muted),transparent 55%)}
-    [data-theme=night]{color-scheme:dark;--bg:#161410;--bg-subtle:#221e18;--bg-inverse:#f3ebe0;--fg:#f3ebe0;--fg-muted:#c4b8a6;--fg-subtle:#8a7f70;--fg-inverse:#1c1814;--accent:#e8a04a;--accent-hover:#f0b56a;--accent-muted:#3a2a18;--struct:#7aa3a6;--struct-muted:#243436;--danger:#e07068;--border:#3a342c;--border-strong:#f3ebe0;--focus:#e8a04a;--grad-atmosphere:linear-gradient(165deg,var(--bg) 0%,var(--struct-muted) 100%);--grad-scope:radial-gradient(120% 80% at 80% 0%,var(--accent-muted),transparent 55%)}
-    :root{--font-display:Newsreader,Palatino,serif;--font-ui:"Source Sans 3","Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--s-03:.5rem;--s-04:.75rem;--s-05:1rem;--s-06:1.5rem;--s-07:2rem;--s-08:2.5rem;--s-09:3rem;--s-10:4rem;--r-1:2px;--rule:1px solid var(--border);--rule-strong:1px solid var(--border-strong);--ease-out:cubic-bezier(.22,1,.36,1);--t-fast:120ms;--page-max:72rem}
-    *,*::before,*::after{box-sizing:border-box}html{background:var(--bg);color:var(--fg);scroll-behavior:smooth}body{margin:0;font:400 1.0625rem/1.55 var(--font-ui);-webkit-font-smoothing:antialiased}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--accent-hover);text-decoration-thickness:2px}:focus-visible{outline:2px solid var(--focus);outline-offset:2px}.wrap{width:min(var(--page-max),calc(100% - 4rem));margin-inline:auto}@media(max-width:720px){.wrap{width:min(var(--page-max),calc(100% - 2rem))}}.kicker{font:600 .75rem/1.3 var(--font-ui);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-subtle);margin:0 0 var(--s-03)}.display{font:500 clamp(2.6rem,6vw + .5rem,4.4rem)/1.08 var(--font-display);font-optical-sizing:auto;letter-spacing:-.02em;margin:0}h2{font:500 1.5rem/1.25 var(--font-display);font-optical-sizing:auto;letter-spacing:-.015em;margin:0 0 var(--s-04)}h3{font:600 1.125rem/1.35 var(--font-ui);margin:0 0 var(--s-03)}p{margin:0 0 var(--s-05);max-width:68ch}.mono{font:400 .8125rem/1.45 var(--font-mono);font-variant-numeric:tabular-nums}.mast{display:flex;align-items:center;justify-content:space-between;gap:var(--s-05);padding:var(--s-04) 0;border-bottom:var(--rule);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);z-index:4}.wordmark{font:600 .75rem/1 var(--font-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--fg);text-decoration:none}.mast nav{display:flex;flex-wrap:wrap;gap:var(--s-05)}.mast nav a{font:600 .75rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);text-decoration:none}.mast nav a:hover{color:var(--accent)}.tools{display:flex;gap:var(--s-03);align-items:center}.chip{appearance:none;background:var(--bg);color:var(--fg);border:var(--rule);border-radius:var(--r-1);font:600 .75rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;padding:.45rem .7rem;cursor:pointer;text-decoration:none}.hero{padding:var(--s-10) 0 var(--s-09);background-image:var(--grad-atmosphere),var(--grad-scope);border-bottom:var(--rule)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--s-09);align-items:center}@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}.lede{font:400 1.2rem/1.45 var(--font-display);max-width:36rem;color:var(--fg-muted)}.scope{width:100%;aspect-ratio:1;max-width:22rem;justify-self:end}section.block{padding:var(--s-10) 0;border-bottom:var(--rule)}.split{display:grid;grid-template-columns:14rem 1fr;gap:var(--s-07)}@media(max-width:720px){.split{grid-template-columns:1fr}}.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:var(--s-03)}.swatch{min-height:6.2rem;border:var(--rule);padding:var(--s-03);display:flex;flex-direction:column;justify-content:flex-end;gap:.15rem;font:600 .7rem/1.2 var(--font-ui);letter-spacing:.04em}.swatch code{font:400 .65rem/1 var(--font-mono);opacity:.8}.type-sample{border-top:var(--rule);padding-top:var(--s-04)}.type-meta{font:400 .75rem/1.3 var(--font-mono);color:var(--fg-subtle);margin-bottom:.35rem}.row{display:flex;flex-wrap:wrap;gap:var(--s-04);align-items:center}.btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:var(--s-08);padding:0 var(--s-05);border-radius:var(--r-1);border:1px solid transparent;font:600 .9375rem/1.4 var(--font-ui);letter-spacing:.01em;cursor:pointer;text-decoration:none}.btn.primary{background:var(--accent);color:var(--fg-inverse)}.btn.primary:hover{background:var(--accent-hover)}.btn.ghost{background:transparent;color:var(--accent);border-color:var(--border)}.btn.ghost:hover{border-color:var(--accent);background:var(--accent-muted)}.btn.danger{background:var(--danger);color:#fff}.btn:disabled{opacity:.4;cursor:not-allowed}.field{display:flex;flex-direction:column;gap:.25rem;max-width:22rem}.field input{appearance:none;height:var(--s-08);padding:0 var(--s-04);border:var(--rule);border-radius:var(--r-1);background:var(--bg-subtle);color:var(--fg);font:400 .9375rem/1.4 var(--font-ui)}.panel{background:var(--bg);border:var(--rule);padding:var(--s-06)}.panel.atmo{background-image:var(--grad-atmosphere)}table.ledger{width:100%;border-collapse:collapse;font:400 .9375rem/1.4 var(--font-ui)}table.ledger th{font:600 .75rem/1.3 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--fg-subtle);border-bottom:var(--rule-strong);padding:var(--s-03) var(--s-04)}table.ledger td{border-bottom:var(--rule);padding:var(--s-04)}table.ledger tr:nth-child(even) td{background:var(--bg-subtle)}table.ledger .num{text-align:right;font:400 .8125rem/1.45 var(--font-mono);font-variant-numeric:tabular-nums}.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:var(--s-05)}.principles article{border:var(--rule);padding:var(--s-05)}.principles strong{display:block;font:600 1rem/1.3 var(--font-ui);margin-bottom:.35rem}footer{padding:var(--s-08) 0 var(--s-10);font:400 .875rem/1.5 var(--font-ui);color:var(--fg-muted)}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    :root,[data-theme=sheet]{color-scheme:light;--q-paper:#f2f1ec;--q-ink:#131316;--q-void:#0b0d10;--q-void-raised:#14181d;--bg:#f2f1ec;--bg-subtle:#e7e4d9;--bg-raised:#faf9f5;--bg-inverse:#131316;--fg:#131316;--fg-muted:#3d3d44;--fg-subtle:#6b6b74;--fg-inverse:#f2f1ec;--fg-on-fill:#fff;--accent:#9a2b00;--accent-fill:#b93305;--accent-hover:#8a2500;--accent-active:#771f00;--accent-muted:#f6d9cb;--struct:#3a4a5a;--struct-muted:#dde3e9;--danger:#a6192e;--danger-muted:#f2d3d8;--success:#1e6b4f;--success-muted:#d2e5db;--border:#cfccc0;--border-strong:#131316;--focus:#9a2b00;--overlay:rgba(11,13,16,.55);--button-primary-bg:#b93305;--button-primary-fg:#fff;--button-primary-hover:#8a2500;--button-primary-active:#771f00;--field-bg:#faf9f5;--grad-fountain:linear-gradient(100deg,var(--bg) 0%,var(--struct-muted) 100%);--grad-void-bloom:radial-gradient(90% 70% at 70% 10%,rgba(232,68,10,.22),transparent 60%)}
+    [data-theme=void]{color-scheme:dark;--bg:#0b0d10;--bg-subtle:#14181d;--bg-raised:#1b2027;--bg-inverse:#f2f1ec;--fg:#f0eee7;--fg-muted:#c6c4b9;--fg-subtle:#9a978c;--fg-inverse:#131316;--fg-on-fill:#131316;--accent:#ff6b2c;--accent-fill:#ff6b2c;--accent-hover:#ff8550;--accent-active:#ffa07a;--accent-muted:#3a1e10;--struct:#9fb2c3;--struct-muted:#1d2a36;--danger:#ef8d9b;--danger-muted:#3a1a20;--success:#7cc9a5;--success-muted:#12291f;--border:#2c333c;--border-strong:#f0eee7;--focus:#ff6b2c;--overlay:rgba(0,0,0,.68);--button-primary-bg:#ff6b2c;--button-primary-fg:#131316;--button-primary-hover:#ff8550;--button-primary-active:#ffa07a;--field-bg:#14181d;--grad-fountain:linear-gradient(100deg,var(--bg) 0%,var(--struct-muted) 100%);--grad-void-bloom:radial-gradient(90% 70% at 70% 10%,rgba(255,107,44,.2),transparent 60%)}
+    :root{--font-display:Archivo,"Helvetica Neue",Arial,sans-serif;--font-ui:Archivo,"Helvetica Neue",Arial,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--s-03:.5rem;--s-04:.75rem;--s-05:1rem;--s-06:1.5rem;--s-07:2rem;--s-08:2.5rem;--s-09:3rem;--s-10:4rem;--s-12:6rem;--r-1:2px;--r-full:999px;--rule:1px solid var(--border);--rule-strong:1px solid var(--border-strong);--ease-out:cubic-bezier(.22,1,.36,1);--t-fast:120ms;--t-mid:220ms;--page-max:76rem}
+    *,*::before,*::after{box-sizing:border-box}html{background:var(--bg);color:var(--fg);scroll-behavior:smooth}body{margin:0;font:400 1.0625rem/1.6 var(--font-ui);-webkit-font-smoothing:antialiased}h1{font:800 2rem/1.1 var(--font-display);font-stretch:118%;letter-spacing:-.02em;margin:0 0 var(--s-04)}h2{font:700 1.375rem/1.2 var(--font-display);font-stretch:110%;letter-spacing:-.015em;margin:0 0 var(--s-04)}h3{font:600 1.0625rem/1.35 var(--font-ui);margin:0 0 var(--s-03)}p{margin:0 0 var(--s-05);max-width:68ch}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--accent-hover);text-decoration-thickness:2px}:focus-visible{outline:2px solid var(--focus);outline-offset:2px}.wrap{width:min(var(--page-max),calc(100% - 4rem));margin-inline:auto}@media(max-width:720px){.wrap{width:min(var(--page-max),calc(100% - 2rem))}}.kicker{font:600 .75rem/1.3 var(--font-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--fg-subtle);margin:0 0 var(--s-03)}.mono{font:400 .8125rem/1.5 var(--font-mono);font-variant-numeric:tabular-nums}.display{font:800 clamp(2.75rem,5vw + 1rem,4.75rem)/1.02 var(--font-display);font-stretch:122%;letter-spacing:-.025em;margin:0}
+    .mast{display:flex;align-items:center;justify-content:space-between;gap:var(--s-05);padding:var(--s-04) 0;border-bottom:var(--rule);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);z-index:10}.brand{display:flex;align-items:center;gap:var(--s-04);text-decoration:none;color:var(--fg)}.wordmark{font:800 .78rem/1 var(--font-display);font-stretch:125%;letter-spacing:.12em}.mast nav{display:flex;flex-wrap:wrap;gap:var(--s-05)}.mast nav a{font:600 .72rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);text-decoration:none}.mast nav a:hover{color:var(--accent)}.tools{display:flex;gap:var(--s-03)}.chip{appearance:none;background:var(--bg);color:var(--fg);border:var(--rule);border-radius:var(--r-1);font:600 .72rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;padding:.5rem .75rem;cursor:pointer;text-decoration:none}
+    .void-band{background:#0b0d10;color:#f0eee7;background-image:radial-gradient(90% 70% at 70% 10%,rgba(232,68,10,.22),transparent 60%);border-bottom:1px solid #0b0d10}.void-band .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--s-09);align-items:center;padding:var(--s-10) 0 var(--s-09)}@media(max-width:900px){.void-band .wrap{grid-template-columns:1fr}}.void-band .kicker{color:#9a978c}.void-band .lede{color:#c6c4b9;font-size:1.2rem;line-height:1.5;max-width:36rem}.void-band a.cta-primary{background:#ff6b2c;color:#131316}.void-band a.cta-ghost{color:#ff6b2c;border-color:#2c333c}.telemetry{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-03);border:1px solid #2c333c;padding:var(--s-05)}.telemetry div{border-top:1px solid #2c333c;padding-top:var(--s-03)}.telemetry dt{font:600 .68rem/1.3 var(--font-ui);letter-spacing:.1em;text-transform:uppercase;color:#9a978c;margin:0}.telemetry dd{font:400 .8125rem/1.5 var(--font-mono);margin:.2rem 0 0;color:#f0eee7}
+    .fountain{background-image:var(--grad-fountain);border-bottom:var(--rule)}.fountain .wrap{padding:var(--s-09) 0}
+    section.block{padding:var(--s-10) 0;border-bottom:var(--rule)}.split{display:grid;grid-template-columns:15rem 1fr;gap:var(--s-07)}@media(max-width:760px){.split{grid-template-columns:1fr}}
+    .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(8rem,1fr));gap:var(--s-03)}.swatch{min-height:6.5rem;border:var(--rule);padding:var(--s-03);display:flex;flex-direction:column;justify-content:flex-end;gap:.15rem;font:600 .7rem/1.2 var(--font-ui)}.swatch code{font:400 .65rem/1 var(--font-mono);opacity:.85}
+    table.spec{width:100%;border-collapse:collapse;font:400 .875rem/1.45 var(--font-ui)}table.spec th{font:600 .72rem/1.3 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--fg-subtle);border-bottom:var(--rule-strong);padding:var(--s-03) var(--s-04)}table.spec td{border-bottom:var(--rule);padding:var(--s-03) var(--s-04)}table.spec .num{text-align:right;font:400 .8125rem/1.5 var(--font-mono);font-variant-numeric:tabular-nums}
+    .row{display:flex;flex-wrap:wrap;gap:var(--s-04);align-items:center}.btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:var(--s-08);padding:0 var(--s-05);border-radius:var(--r-1);border:1px solid transparent;font:600 .9375rem/1.4 var(--font-ui);cursor:pointer;text-decoration:none;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out)}.btn.primary{background:var(--button-primary-bg);color:var(--button-primary-fg)}.btn.primary:hover{background:var(--button-primary-hover)}.btn.secondary{background:transparent;color:var(--fg);border-color:var(--border-strong)}.btn.secondary:hover{background:var(--bg-subtle)}.btn.ghost{background:transparent;color:var(--accent);border-color:var(--border)}.btn.ghost:hover{border-color:var(--accent);background:var(--accent-muted)}.btn.danger{background:var(--danger);color:#fff}.btn.sm{min-height:1.75rem;padding:0 var(--s-04);font-size:.8125rem}.btn.lg{min-height:3rem;padding:0 var(--s-06);font-size:1rem}.btn:disabled{opacity:.45;cursor:not-allowed}
+    .field{display:flex;flex-direction:column;gap:.25rem;max-width:22rem}.field input{height:var(--s-08);padding:0 var(--s-04);border:var(--rule);border-radius:var(--r-1);background:var(--field-bg);color:var(--fg);font:400 .9375rem/1.45 var(--font-ui)}.field input[aria-invalid=true]{border:2px solid var(--danger)}
+    .badge{display:inline-flex;align-items:center;min-height:1.5rem;padding:0 var(--s-03);border:var(--rule);border-radius:var(--r-full);font:600 .72rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted)}.badge.accent{color:var(--accent);border-color:var(--accent);background:var(--accent-muted)}.badge.danger{color:var(--danger);border-color:var(--danger);background:var(--danger-muted)}.badge.success{color:var(--success);border-color:var(--success);background:var(--success-muted)}
+    .notice{display:grid;grid-template-columns:4px 1fr;gap:var(--s-04);border:var(--rule);background:var(--bg-raised);padding:var(--s-04) var(--s-05);font:400 .9375rem/1.45 var(--font-ui)}.notice .bar{background:var(--accent-fill)}.notice.danger .bar{background:var(--danger)}.notice.success .bar{background:var(--success)}
+    .panel{border:var(--rule);padding:var(--s-06);background:var(--bg)}.panel.void{background:#0b0d10;color:#f0eee7;border-color:#2c333c;background-image:radial-gradient(90% 70% at 70% 10%,rgba(232,68,10,.22),transparent 60%)}.panel.void .kicker{color:#9a978c}
+    .tabs{display:flex;border-bottom:var(--rule-strong)}.tabs button{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:var(--s-03) var(--s-05);min-height:var(--s-08);font:600 .72rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-subtle);cursor:pointer}.tabs button.active{color:var(--accent);border-bottom-color:var(--accent-fill)}
+    .grid-demo{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin-top:var(--s-05)}.grid-demo span{border:var(--rule);background:var(--bg-raised);min-height:2.5rem;display:block}
+    .veil{position:fixed;inset:0;background:var(--overlay);display:none;place-items:center;padding:var(--s-05);z-index:50}.veil.open{display:grid}.sheet{background:var(--bg);color:var(--fg);border:1px solid var(--border-strong);padding:var(--s-06);width:min(28rem,100%)}
+    footer{padding:var(--s-08) 0 var(--s-10);color:var(--fg-muted);font-size:.875rem}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="mast">
-      <a class="wordmark" href="#top">Quire 0.1</a>
+      <a class="brand" href="#top" aria-label="Quire home">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="1" y1="12" x2="31" y2="12" stroke="currentColor" stroke-width="1"/><line x1="12" y1="1" x2="12" y2="31" stroke="currentColor" stroke-width="1"/><rect x="13" y="13" width="18" height="18" fill="#B93305"/><line x1="1" y1="1" x2="31" y2="31" stroke="currentColor" stroke-width="1"/></svg>
+        <span class="wordmark">QUIRE 1.0</span>
+      </a>
       <nav aria-label="Specimen">
-        <a href="#color">Color</a><a href="#type">Type</a><a href="#controls">Controls</a><a href="#ledger">Ledger</a><a href="#principles">Principles</a>
+        <a href="#color">Color</a><a href="#type">Type</a><a href="#components">Components</a><a href="#states">States</a><a href="#access">Access</a>
       </nav>
       <div class="tools">
-        <button class="chip" type="button" id="theme" aria-pressed="false">Night</button>
+        <button class="chip" type="button" id="theme" aria-pressed="false">Void ground</button>
         <a class="chip" href="https://github.com/armacleod/quire">Repo</a>
       </div>
     </header>
   </div>
-  <header class="hero" id="top">
-    <div class="wrap hero-grid">
+
+  <div class="void-band" id="top">
+    <div class="wrap">
       <div>
-        <p class="kicker">Design system specimen</p>
-        <h1 class="display">Paper, ink,<br />one oxide signal.</h1>
-        <p class="lede">Carbon’s token discipline printed on uncoated stock. Mid-century aerospace report craft for Svelte sites that should not look like a kiosk.</p>
+        <p class="kicker">Design system specimen · Ledger and the Void</p>
+        <h1 class="display">The record<br />and the risk.</h1>
+        <p class="lede">Quire is a document sheet for work and a black field for orientation. One signal hue. Grotesk type. Section-cut geometry. The sheet states facts. The void holds what is unresolved.</p>
         <div class="row">
-          <a class="btn primary" href="https://github.com/armacleod/quire/blob/main/DESIGN.md">Read the spec</a>
-          <a class="btn ghost" href="https://github.com/armacleod/quire">Source</a>
+          <a class="btn primary cta-primary" href="#ledger">Read the ledger</a>
+          <a class="btn secondary cta-ghost" href="https://github.com/armacleod/quire/blob/main/DESIGN.md">Read the spec</a>
+        </div>
+        <p class="mono" style="color:#9a978c;margin-top:1.5rem">SHEET 01 · VOID 02 · EMBER E1 · SLATE S1</p>
+      </div>
+      <dl class="telemetry" aria-label="Range figures">
+        <div><dt>Backlog</dt><dd>$1,700,000,000</dd></div>
+        <div><dt>Programs</dt><dd>14 active</dd></div>
+        <div><dt>Sheet</dt><dd>FIG. 1 — SECTION</dd></div>
+        <div><dt>Status</dt><dd>3 HOLD · 11 PROCEED</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="fountain">
+    <div class="wrap split">
+      <div><p class="kicker">Thesis</p><h2>Two fields, one page</h2></div>
+      <div>
+        <p>A page without void has no tension. A page without sheet has no record. The void band above is orientation: title, posture, figures. What follows is the ledger: dense, checkable, plain.</p>
+        <div class="row">
+          <span class="badge accent">Proceed</span><span class="badge">Hold</span><span class="badge danger">Stop</span><span class="badge success">Signed</span>
         </div>
       </div>
-      <svg class="scope" viewBox="0 0 240 240" aria-hidden="true">
-        <circle cx="120" cy="120" r="108" fill="none" stroke="currentColor" stroke-width=".6" opacity=".28"/>
-        <circle cx="120" cy="120" r="78" fill="none" stroke="currentColor" stroke-width=".6" opacity=".4"/>
-        <circle cx="120" cy="120" r="48" fill="none" stroke="var(--struct)" stroke-width="1"/>
-        <circle cx="120" cy="120" r="8" fill="var(--accent)"/>
-        <line x1="120" y1="12" x2="120" y2="228" stroke="currentColor" stroke-width=".4" opacity=".25"/>
-        <line x1="12" y1="120" x2="228" y2="120" stroke="currentColor" stroke-width=".4" opacity=".25"/>
-        <path d="M120 120 L186 54" stroke="var(--accent)" stroke-width="1.2"/>
-        <circle cx="186" cy="54" r="4" fill="none" stroke="var(--accent)" stroke-width="1.2"/>
-      </svg>
     </div>
-  </header>
+  </div>
+
   <main>
-    <section class="block" id="color"><div class="wrap split"><div><p class="kicker">01 / Color</p><h2>Roles, not hex in components</h2></div><div><p>Oxide is the only action color. Orbit is structure. Night swaps oxide for phosphor amber — a CRT, not a neon.</p><div class="swatches"><div class="swatch" style="background:var(--bg)">bg<code>--bg</code></div><div class="swatch" style="background:var(--bg-subtle)">subtle<code>--bg-subtle</code></div><div class="swatch" style="background:var(--accent);color:var(--fg-inverse)">accent<code>--accent</code></div><div class="swatch" style="background:var(--struct);color:#f6efe2">struct<code>--struct</code></div><div class="swatch" style="background:var(--danger);color:#fff">danger<code>--danger</code></div><div class="swatch" style="background:var(--bg-inverse);color:var(--fg-inverse)">inverse<code>--bg-inverse</code></div><div class="swatch" style="background:var(--accent-muted)">mist<code>--accent-muted</code></div><div class="swatch" style="background:var(--struct-muted)">orbit mist<code>--struct-muted</code></div></div></div></div></section>
-    <section class="block" id="type"><div class="wrap split"><div><p class="kicker">02 / Type</p><h2>Two jobs</h2></div><div><div class="type-sample"><p class="type-meta">Newsreader · display · 500</p><p class="display" style="font-size:clamp(2rem,4vw,3.2rem)">Dynamic America</p></div><div class="type-sample"><p class="type-meta">Source Sans 3 · body · 400</p><p>Newsreader speaks. Source Sans 3 works. IBM Plex Mono is for <span class="mono">$1,700,000,000</span> and nothing else.</p></div><div class="type-sample"><p class="type-meta">Label · 600 · +0.08em</p><p class="kicker" style="margin:0">Atmosphere · Fiscal 1968 · Electric Boat</p></div></div></div></section>
-    <section class="block" id="controls"><div class="wrap split"><div><p class="kicker">03 / Controls</p><h2>Machined, not squircles</h2></div><div><div class="row" style="margin-bottom:2rem"><button class="btn primary" type="button">Primary</button><button class="btn ghost" type="button">Ghost</button><button class="btn danger" type="button">Danger</button><button class="btn primary" type="button" disabled>Disabled</button></div><div class="row" style="align-items:flex-end;gap:1.5rem"><label class="field"><span class="kicker">Hull number</span><input value="SSN-571" /></label><label class="field"><span class="kicker">Yard</span><input value="Groton" /></label></div><div class="row" style="margin-top:2rem"><article class="panel atmo" style="flex:1;min-width:16rem"><p class="kicker">Sheet</p><h3 style="font:500 1.5rem/1.25 var(--font-display)">Electric Boat</h3><p style="margin:0">Hairline rule. Atmosphere wash allowed. No drop shadow.</p></article><article class="panel" style="flex:1;min-width:16rem"><p class="kicker">Plain sheet</p><h3 style="font:500 1.5rem/1.25 var(--font-display)">Convair</h3><p style="margin:0">Same contract without the gradient.</p></article></div></div></div></section>
-    <section class="block" id="ledger"><div class="wrap split"><div><p class="kicker">04 / Ledger</p><h2>Figures in mono</h2></div><table class="ledger"><thead><tr><th>Division</th><th>Program</th><th style="text-align:right">Backlog</th></tr></thead><tbody><tr><td>Electric Boat</td><td>Nautilus</td><td class="num">418,200,000</td></tr><tr><td>Convair</td><td>F-106</td><td class="num">291,040,000</td></tr><tr><td>Astronautics</td><td>Atlas</td><td class="num">990,760,000</td></tr><tr><td>Canadair</td><td>CL-44</td><td class="num">74,110,000</td></tr></tbody></table></div></section>
-    <section class="block" id="principles"><div class="wrap"><p class="kicker">05 / Principles</p><h2>Steal the method. Leave the livery.</h2><div class="principles"><article><strong>Paper before chrome</strong>Elevation is a rule or a shift in paper tone.</article><article><strong>One signal color</strong>Oxide acts. Orbit structures.</article><article><strong>Type has two jobs</strong>Serif speaks. Sans works. Mono counts.</article><article><strong>Geometry is citation</strong>Orbits on covers — not on every card.</article><article><strong>Pacing over density</strong>Related: 8–12px. Groups: 32–48px.</article><article><strong>States are tokens</strong>No one-off hex in a component file.</article></div></div></section>
+    <section class="block" id="color"><div class="wrap split"><div><p class="kicker">01 / Color</p><h2>Roles, not swatches</h2><p>Ember acts. Slate structures. Paper and void are grounds. Components never use raw hex.</p></div><div>
+      <div class="swatches">
+        <div class="swatch" style="background:var(--bg)">bg<code>--bg</code></div>
+        <div class="swatch" style="background:var(--bg-subtle)">subtle<code>--bg-subtle</code></div>
+        <div class="swatch" style="background:var(--accent-fill);color:var(--button-primary-fg)">ember fill<code>--accent-fill</code></div>
+        <div class="swatch" style="background:var(--accent-muted)">ember wash<code>--accent-muted</code></div>
+        <div class="swatch" style="background:var(--struct);color:#f2f1ec">slate<code>--struct</code></div>
+        <div class="swatch" style="background:var(--struct-muted)">slate wash<code>--struct-muted</code></div>
+        <div class="swatch" style="background:var(--danger);color:#fff">danger<code>--danger</code></div>
+        <div class="swatch" style="background:var(--bg-inverse);color:var(--fg-inverse)">inverse<code>--bg-inverse</code></div>
+      </div>
+      <h3 style="margin-top:2rem">Measured pairs</h3>
+      <table class="spec"><thead><tr><th>Pair</th><th style="text-align:right">Ratio</th><th>Use</th></tr></thead><tbody>
+        <tr><td>Ink on sheet</td><td class="num">16.4</td><td>Body, titles</td></tr>
+        <tr><td>Ember deep on sheet</td><td class="num">6.8</td><td>Links, accent text</td></tr>
+        <tr><td>Ember fill with white</td><td class="num">5.9</td><td>Primary button</td></tr>
+        <tr><td>Void text on void</td><td class="num">16.8</td><td>Void body</td></tr>
+        <tr><td>Void ember on void</td><td class="num">6.9</td><td>Void action</td></tr>
+      </tbody></table>
+    </div></div></section>
+
+    <section class="block" id="type"><div class="wrap split"><div><p class="kicker">02 / Type</p><h2>Grotesk by width</h2><p>Expanded speaks. Regular works. Mono counts. No book serif.</p></div><div>
+      <p class="kicker">Archivo Expanded 800 · Display</p>
+      <p class="display" style="font-size:clamp(2rem,4vw,3.2rem)">Range is clear</p>
+      <p class="kicker" style="margin-top:1.5rem">Archivo 400 · Body</p>
+      <p>Backlog is $1.7 billion across 14 programs. Three are on hold. The table below lists each division, program, and figure. Figures are set in <span class="mono">IBM Plex Mono</span> and aligned right.</p>
+      <p class="kicker" style="margin-top:1.5rem">Label · 600 · +0.10em</p>
+      <p class="kicker" style="margin:0">Section 04 · Figure 1 · Fiscal record</p>
+    </div></div></section>
+
+    <section class="block" id="ledger"><div class="wrap split"><div><p class="kicker">03 / Ledger</p><h2>Figures in mono</h2><p>44–48px rows. Zebra subtle. Header in label. Numerals right.</p></div><div>
+      <table class="spec"><thead><tr><th>Division</th><th>Program</th><th>Status</th><th style="text-align:right">Backlog</th></tr></thead><tbody>
+        <tr><td>Electric Boat</td><td>Nautilus</td><td><span class="badge success">Proceed</span></td><td class="num">418,200,000</td></tr>
+        <tr><td>Convair</td><td>F-106</td><td><span class="badge">Hold</span></td><td class="num">291,040,000</td></tr>
+        <tr><td>Astronautics</td><td>Atlas</td><td><span class="badge accent">Proceed</span></td><td class="num">990,760,000</td></tr>
+        <tr><td>Canadair</td><td>CL-44</td><td><span class="badge danger">Stop</span></td><td class="num">74,110,000</td></tr>
+      </tbody></table>
+      <div class="grid-demo" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="mono" style="margin-top:.5rem">GRID · 12 COLUMNS · 16PX GUTTER</p>
+    </div></div></section>
+
+    <section class="block" id="components"><div class="wrap split"><div><p class="kicker">04 / Components</p><h2>Machined controls</h2><p>Buttons in three sizes. Fields with explicit error. Notices with anchor bars. Tabs with ember selection. A dialog with a void veil.</p></div><div>
+      <div class="row"><button class="btn primary" type="button">Primary</button><button class="btn secondary" type="button">Secondary</button><button class="btn ghost" type="button">Ghost</button><button class="btn danger" type="button">Danger</button><button class="btn primary" type="button" disabled>Disabled</button></div>
+      <div class="row" style="margin-top:.5rem"><button class="btn primary sm" type="button">Small</button><button class="btn primary" type="button">Medium</button><button class="btn primary lg" type="button">Large</button></div>
+      <div class="row" style="margin-top:1.5rem;align-items:flex-end;gap:1.5rem">
+        <label class="field"><span class="kicker">Hull number</span><input value="SSN-571" /></label>
+        <label class="field"><span class="kicker">Yard</span><input value="Groton" aria-invalid="true" /><span class="kicker" style="color:var(--danger)">Enter the yard as listed.</span></label>
+      </div>
+      <div class="row" style="margin-top:1.5rem"><div class="notice" style="flex:1;min-width:16rem"><span class="bar"></span><div><strong>Hold released.</strong>Convair figures were restated. The ledger below reflects the correction.</div></div>
+      <div class="notice danger" style="flex:1;min-width:16rem"><span class="bar"></span><div><strong>Stop.</strong>CL-44 is closed. No further entries accepted.</div></div></div>
+      <div class="row" style="margin-top:1.5rem"><article class="panel" style="flex:1;min-width:16rem"><p class="kicker">Sheet</p><h3>Electric Boat</h3><p style="margin:0">Hairline rule. No shadow.</p></article>
+      <article class="panel void" style="flex:1;min-width:16rem"><p class="kicker">Void</p><h3>Atlas</h3><p style="margin:0">Ember bloom allowed on void only.</p></article></div>
+      <div style="margin-top:1.5rem"><div class="tabs" role="tablist" aria-label="Demo"><button class="active" type="button" role="tab" aria-selected="true">Ledger</button><button type="button" role="tab" aria-selected="false" id="tab-void">Void</button><button type="button" role="tab" aria-selected="false">Notes</button></div>
+      <p style="margin-top:1rem">The ledger is the record. The void is the posture. Notes explain corrections.</p>
+      <button class="btn secondary" type="button" id="open-dialog">Open dialog</button></div>
+    </div></div></section>
+
+    <section class="block" id="states"><div class="wrap split"><div><p class="kicker">05 / States</p><h2>Every state is a token</h2><p>Hover, active, selected, disabled, and focus are specified. Focus is a 2px ring offset 2px.</p></div><div>
+      <table class="spec"><thead><tr><th>State</th><th>Token</th><th>Note</th></tr></thead><tbody>
+        <tr><td>Hover</td><td class="num">--accent-hover</td><td>Fill darkens on sheet, brightens on void</td></tr>
+        <tr><td>Active</td><td class="num">--accent-active</td><td>Pressed step beyond hover</td></tr>
+        <tr><td>Selected</td><td class="num">--accent-muted</td><td>Wash plus ember underline</td></tr>
+        <tr><td>Disabled</td><td class="num">45% opacity</td><td>No pointer events; label remains readable</td></tr>
+        <tr><td>Focus</td><td class="num">--focus</td><td>2px ring, 2px offset, 3:1 minimum</td></tr>
+      </tbody></table>
+      <p style="margin-top:1rem"><a href="#top">Tab to this link to check the focus ring</a>, then open the dialog above with the keyboard. Motion respects reduced-motion settings.</p>
+    </div></div></section>
+
+    <section class="block" id="access"><div class="wrap split"><div><p class="kicker">06 / Access</p><h2>Constraint, not detail</h2><p>Targets are 28px minimum for small buttons, 40px standard. The dialog traps focus while open and closes on veil click.</p></div><div>
+      <div class="notice success"><span class="bar"></span><div><strong>Contrast budget.</strong>Body ink on sheet 16.4:1. Ember text 6.8:1. Primary fill with white 5.9:1. Void pairs above 6.5:1. No low-contrast body text ships.</div></div>
+      <p style="margin-top:1rem">Voice is plain. Empty states state the fact and the next step. Labels are verbs first: Open dialog, Read the ledger, Read the spec.</p>
+    </div></div></section>
   </main>
-  <footer><div class="wrap">Quire 0.1 · MIT · <a href="https://github.com/armacleod/quire">github.com/armacleod/quire</a></div></footer>
+
+  <div class="veil" id="veil"><div class="sheet" role="dialog" aria-modal="true" aria-label="Hold notice"><p class="kicker">Dialog · Void veil</p><h2>Hold notice</h2><p>Three programs are on hold. The ledger lists which. Close this panel to return to the record.</p><div class="row" style="justify-content:flex-end"><button class="btn secondary" type="button" id="close-dialog">Close</button></div></div></div>
+
+  <footer><div class="wrap">Quire 1.0 · MIT · <a href="https://github.com/armacleod/quire">github.com/armacleod/quire</a> · <a href="https://github.com/armacleod/quire/blob/main/DESIGN.md">Spec</a> · Sheet and void on every page.</div></footer>
   <script>
     const root=document.documentElement,btn=document.getElementById('theme');
     const saved=localStorage.getItem('quire-theme');
-    if(saved==='night'){root.setAttribute('data-theme','night');btn.textContent='Paper';btn.setAttribute('aria-pressed','true')}
-    btn.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='night'?'paper':'night';root.setAttribute('data-theme',next);localStorage.setItem('quire-theme',next);btn.textContent=next==='night'?'Paper':'Night';btn.setAttribute('aria-pressed',next==='night'?'true':'false')});
+    if(saved==='void'){root.setAttribute('data-theme','void');btn.textContent='Sheet ground';btn.setAttribute('aria-pressed','true')}
+    btn.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='void'?'sheet':'void';root.setAttribute('data-theme',next);localStorage.setItem('quire-theme',next);btn.textContent=next==='void'?'Sheet ground':'Void ground';btn.setAttribute('aria-pressed',next==='void'?'true':'false')});
+    const veil=document.getElementById('veil');
+    document.getElementById('open-dialog').addEventListener('click',()=>veil.classList.add('open'));
+    document.getElementById('close-dialog').addEventListener('click',()=>veil.classList.remove('open'));
+    veil.addEventListener('click',(e)=>{if(e.target===veil)veil.classList.remove('open')});
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape')veil.classList.remove('open')});
   </script>
 </body>
 </html>
