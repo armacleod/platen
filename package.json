@@ -1,7 +1,7 @@
 {
   "name": "quire",
-  "version": "0.5.0",
-  "description": "Plate field, paper keys, cluster layout. Svelte primitives.",
+  "version": "0.6.0",
+  "description": "Three inks. Void and sheet. Svelte primitives.",
   "type": "module",
   "exports": {
     ".": "./src/lib/index.js",

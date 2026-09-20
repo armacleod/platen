@@ -1,10 +1,6 @@
 # Quire
 
-Iron-blue plate, paper type, no brand chroma. Version 0.5.
+Black, white, cadmium. Version 0.6.
 
-**Spec:** [DESIGN.md](./DESIGN.md)
-**Specimen:** [index.html](./index.html)
-
-```html
-<html data-field="plate">
-```
+**Live:** https://armacleod.github.io/quire/
+**Spec:** DESIGN.md
