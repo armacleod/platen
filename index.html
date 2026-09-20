@@ -1,69 +1,187 @@
 <!doctype html>
-<html lang="en" data-theme="paper">
+<html lang="en" data-field="plate">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quire — reference</title>
-  <meta name="description" content="Quire design system specimen." />
+  <title>Quire 0.5</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    :root,[data-theme=paper]{color-scheme:light;--paper-0:#f6efe2;--paper-1:#efe6d4;--ink-0:#1c1814;--ink-1:#4a433a;--ink-2:#7a7166;--oxide:#c45c1a;--oxide-deep:#9a4310;--oxide-mist:#f3d9c4;--orbit:#2f5f63;--orbit-mist:#d5e2e0;--signal:#9b2f2a;--bg:var(--paper-0);--bg-subtle:var(--paper-1);--bg-inverse:var(--ink-0);--fg:var(--ink-0);--fg-muted:var(--ink-1);--fg-subtle:var(--ink-2);--fg-inverse:var(--paper-0);--accent:var(--oxide);--accent-hover:var(--oxide-deep);--accent-muted:var(--oxide-mist);--struct:var(--orbit);--struct-muted:var(--orbit-mist);--danger:var(--signal);--border:#d4c7b0;--border-strong:var(--ink-0);--focus:var(--oxide);--grad-atmosphere:linear-gradient(165deg,var(--bg) 0%,var(--struct-muted) 100%);--grad-scope:radial-gradient(120% 80% at 80% 0%,var(--accent-muted),transparent 55%)}
-    [data-theme=night]{color-scheme:dark;--bg:#161410;--bg-subtle:#221e18;--bg-inverse:#f3ebe0;--fg:#f3ebe0;--fg-muted:#c4b8a6;--fg-subtle:#8a7f70;--fg-inverse:#1c1814;--accent:#e8a04a;--accent-hover:#f0b56a;--accent-muted:#3a2a18;--struct:#7aa3a6;--struct-muted:#243436;--danger:#e07068;--border:#3a342c;--border-strong:#f3ebe0;--focus:#e8a04a;--grad-atmosphere:linear-gradient(165deg,var(--bg) 0%,var(--struct-muted) 100%);--grad-scope:radial-gradient(120% 80% at 80% 0%,var(--accent-muted),transparent 55%)}
-    :root{--font-display:Newsreader,Palatino,serif;--font-ui:"Source Sans 3","Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;--s-03:.5rem;--s-04:.75rem;--s-05:1rem;--s-06:1.5rem;--s-07:2rem;--s-08:2.5rem;--s-09:3rem;--s-10:4rem;--r-1:2px;--rule:1px solid var(--border);--rule-strong:1px solid var(--border-strong);--ease-out:cubic-bezier(.22,1,.36,1);--t-fast:120ms;--page-max:72rem}
-    *,*::before,*::after{box-sizing:border-box}html{background:var(--bg);color:var(--fg);scroll-behavior:smooth}body{margin:0;font:400 1.0625rem/1.55 var(--font-ui);-webkit-font-smoothing:antialiased}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--accent-hover);text-decoration-thickness:2px}:focus-visible{outline:2px solid var(--focus);outline-offset:2px}.wrap{width:min(var(--page-max),calc(100% - 4rem));margin-inline:auto}@media(max-width:720px){.wrap{width:min(var(--page-max),calc(100% - 2rem))}}.kicker{font:600 .75rem/1.3 var(--font-ui);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-subtle);margin:0 0 var(--s-03)}.display{font:500 clamp(2.6rem,6vw + .5rem,4.4rem)/1.08 var(--font-display);font-optical-sizing:auto;letter-spacing:-.02em;margin:0}h2{font:500 1.5rem/1.25 var(--font-display);font-optical-sizing:auto;letter-spacing:-.015em;margin:0 0 var(--s-04)}h3{font:600 1.125rem/1.35 var(--font-ui);margin:0 0 var(--s-03)}p{margin:0 0 var(--s-05);max-width:68ch}.mono{font:400 .8125rem/1.45 var(--font-mono);font-variant-numeric:tabular-nums}.mast{display:flex;align-items:center;justify-content:space-between;gap:var(--s-05);padding:var(--s-04) 0;border-bottom:var(--rule);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);z-index:4}.wordmark{font:600 .75rem/1 var(--font-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--fg);text-decoration:none}.mast nav{display:flex;flex-wrap:wrap;gap:var(--s-05)}.mast nav a{font:600 .75rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);text-decoration:none}.mast nav a:hover{color:var(--accent)}.tools{display:flex;gap:var(--s-03);align-items:center}.chip{appearance:none;background:var(--bg);color:var(--fg);border:var(--rule);border-radius:var(--r-1);font:600 .75rem/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;padding:.45rem .7rem;cursor:pointer;text-decoration:none}.hero{padding:var(--s-10) 0 var(--s-09);background-image:var(--grad-atmosphere),var(--grad-scope);border-bottom:var(--rule)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--s-09);align-items:center}@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}.lede{font:400 1.2rem/1.45 var(--font-display);max-width:36rem;color:var(--fg-muted)}.scope{width:100%;aspect-ratio:1;max-width:22rem;justify-self:end}section.block{padding:var(--s-10) 0;border-bottom:var(--rule)}.split{display:grid;grid-template-columns:14rem 1fr;gap:var(--s-07)}@media(max-width:720px){.split{grid-template-columns:1fr}}.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(7.2rem,1fr));gap:var(--s-03)}.swatch{min-height:6.2rem;border:var(--rule);padding:var(--s-03);display:flex;flex-direction:column;justify-content:flex-end;gap:.15rem;font:600 .7rem/1.2 var(--font-ui);letter-spacing:.04em}.swatch code{font:400 .65rem/1 var(--font-mono);opacity:.8}.type-sample{border-top:var(--rule);padding-top:var(--s-04)}.type-meta{font:400 .75rem/1.3 var(--font-mono);color:var(--fg-subtle);margin-bottom:.35rem}.row{display:flex;flex-wrap:wrap;gap:var(--s-04);align-items:center}.btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:var(--s-08);padding:0 var(--s-05);border-radius:var(--r-1);border:1px solid transparent;font:600 .9375rem/1.4 var(--font-ui);letter-spacing:.01em;cursor:pointer;text-decoration:none}.btn.primary{background:var(--accent);color:var(--fg-inverse)}.btn.primary:hover{background:var(--accent-hover)}.btn.ghost{background:transparent;color:var(--accent);border-color:var(--border)}.btn.ghost:hover{border-color:var(--accent);background:var(--accent-muted)}.btn.danger{background:var(--danger);color:#fff}.btn:disabled{opacity:.4;cursor:not-allowed}.field{display:flex;flex-direction:column;gap:.25rem;max-width:22rem}.field input{appearance:none;height:var(--s-08);padding:0 var(--s-04);border:var(--rule);border-radius:var(--r-1);background:var(--bg-subtle);color:var(--fg);font:400 .9375rem/1.4 var(--font-ui)}.panel{background:var(--bg);border:var(--rule);padding:var(--s-06)}.panel.atmo{background-image:var(--grad-atmosphere)}table.ledger{width:100%;border-collapse:collapse;font:400 .9375rem/1.4 var(--font-ui)}table.ledger th{font:600 .75rem/1.3 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--fg-subtle);border-bottom:var(--rule-strong);padding:var(--s-03) var(--s-04)}table.ledger td{border-bottom:var(--rule);padding:var(--s-04)}table.ledger tr:nth-child(even) td{background:var(--bg-subtle)}table.ledger .num{text-align:right;font:400 .8125rem/1.45 var(--font-mono);font-variant-numeric:tabular-nums}.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:var(--s-05)}.principles article{border:var(--rule);padding:var(--s-05)}.principles strong{display:block;font:600 1rem/1.3 var(--font-ui);margin-bottom:.35rem}footer{padding:var(--s-08) 0 var(--s-10);font:400 .875rem/1.5 var(--font-ui);color:var(--fg-muted)}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    :root, [data-field="plate"] {
+      color-scheme: dark;
+      --bg: #182436; --bg-subtle: #223044;
+      --fg: #e7ebf0; --fg-muted: #8a96a4; --fg-inverse: #182436;
+      --accent: #e7ebf0; --accent-hover: #fff;
+      --border: #3a4a5c; --border-strong: #e7ebf0; --focus: #e7ebf0;
+      --paper: #e7ebf0; --plot: #c5d0dc;
+    }
+    [data-field="sheet"] {
+      color-scheme: light;
+      --bg: #e7ebf0; --bg-subtle: #d8dee6;
+      --fg: #182436; --fg-muted: #5a6674; --fg-inverse: #e7ebf0;
+      --accent: #182436; --accent-hover: #0f1722;
+      --border: #c3cad2; --border-strong: #182436; --focus: #182436;
+      --paper: #e7ebf0; --plot: #5a6674;
+    }
+    :root { --sans: "Source Sans 3", "Segoe UI", sans-serif; --mono: "Source Code Pro", ui-monospace, monospace; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--bg); color: var(--fg); }
+    body { margin: 0; font: 400 1rem/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+    .wrap { width: min(72rem, calc(100% - 4rem)); margin-inline: auto; }
+    @media (max-width: 720px) { .wrap { width: min(72rem, calc(100% - 2rem)); } }
+    .legend { font: 600 .6875rem/1.25 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--fg-muted); margin: 0 0 .5rem; }
+    .display { font: 500 clamp(2.25rem, 4vw, 3.5rem)/1.1 var(--sans); letter-spacing: -.03em; margin: 0; }
+    h2 { font: 500 1.125rem/1.3 var(--sans); letter-spacing: -.02em; margin: 0 0 .75rem; }
+    p { margin: 0 0 1rem; max-width: 62ch; }
+    .mono { font: 400 .8125rem/1.4 var(--mono); font-variant-numeric: tabular-nums; }
+    .mast { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); z-index: 4; }
+    .wordmark { font: 600 .6875rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--fg); text-decoration: none; }
+    .mast nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+    .mast nav a { font: 600 .6875rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--fg-muted); text-decoration: none; }
+    .hero { padding: 4rem 0 3.5rem; border-bottom: 1px solid var(--border); }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 3rem; align-items: center; }
+    @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+    .lede { color: var(--fg-muted); }
+    .mark { width: 100%; max-width: 18rem; justify-self: end; }
+    section.block { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+    .split { display: grid; grid-template-columns: 13rem 1fr; gap: 2rem; }
+    @media (max-width: 720px) { .split { grid-template-columns: 1fr; } }
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr)); gap: .5rem; }
+    .swatch { min-height: 5.5rem; border: 1px solid var(--border); padding: .5rem; display: flex; flex-direction: column; justify-content: flex-end; font: 600 .7rem/1.2 var(--sans); }
+    .swatch code { font: 400 .65rem/1 var(--mono); opacity: .7; }
+    .row { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+    .key { appearance: none; display: inline-flex; align-items: center; justify-content: center; min-height: 2.5rem; padding: 0 1rem; border-radius: 2px; border: 1px solid transparent; font: 600 .9375rem/1.4 var(--sans); cursor: pointer; text-decoration: none; }
+    .key.live { background: var(--accent); color: var(--fg-inverse); }
+    .key.live:hover { background: var(--accent-hover); }
+    .key.quiet { background: transparent; color: var(--fg); border-color: var(--border); }
+    .key.quiet:hover { border-color: var(--fg); }
+    .key.halt { background: transparent; color: var(--fg-muted); border-color: var(--border); }
+    .key:disabled { opacity: .4; cursor: not-allowed; }
+    .field { display: flex; flex-direction: column; gap: .25rem; max-width: 22rem; }
+    .field input { appearance: none; height: 2.5rem; padding: 0 .75rem; border: 1px solid var(--border); border-radius: 2px; background: var(--bg-subtle); color: var(--fg); font: 400 .9375rem/1.4 var(--sans); }
+    .cluster { border: 1px solid var(--border); padding: 1.5rem; }
+    .paper { background: #e7ebf0; color: #182436; padding: 2.5rem 0; }
+    .paper .legend { color: #5a6674; }
+    table.board { width: 100%; border-collapse: collapse; }
+    table.board th { font: 600 .6875rem/1.25 var(--sans); letter-spacing: .1em; text-transform: uppercase; text-align: left; color: var(--fg-muted); border-bottom: 1px solid var(--border-strong); padding: .5rem .75rem; }
+    table.board td { border-bottom: 1px solid var(--border); padding: .75rem; }
+    table.board .num { text-align: right; font: 400 .8125rem/1.4 var(--mono); font-variant-numeric: tabular-nums; }
+    .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+    footer { padding: 2.5rem 0 4rem; color: var(--fg-muted); font-size: .875rem; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="mast">
-      <a class="wordmark" href="#top">Quire 0.1</a>
-      <nav aria-label="Specimen">
-        <a href="#color">Color</a><a href="#type">Type</a><a href="#controls">Controls</a><a href="#ledger">Ledger</a><a href="#principles">Principles</a>
+      <a class="wordmark" href="#top">Quire 0.5</a>
+      <nav>
+        <a href="#color">Color</a>
+        <a href="#type">Type</a>
+        <a href="#cluster">Cluster</a>
+        <a href="#well">Well</a>
+        <a href="#board">Board</a>
       </nav>
-      <div class="tools">
-        <button class="chip" type="button" id="theme" aria-pressed="false">Night</button>
-        <a class="chip" href="https://github.com/armacleod/quire">Repo</a>
-      </div>
     </header>
   </div>
   <header class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <p class="kicker">Design system specimen</p>
-        <h1 class="display">Paper, ink,<br />one oxide signal.</h1>
-        <p class="lede">Carbon’s token discipline printed on uncoated stock. Mid-century aerospace report craft for Svelte sites that should not look like a kiosk.</p>
+        <p class="legend">Specification · 0.5</p>
+        <h1 class="display">Quire</h1>
+        <p class="lede">Iron-blue plate. Paper for type. No brand chroma. The mark is a section cut.</p>
         <div class="row">
-          <a class="btn primary" href="https://github.com/armacleod/quire/blob/main/DESIGN.md">Read the spec</a>
-          <a class="btn ghost" href="https://github.com/armacleod/quire">Source</a>
+          <a class="key live" href="https://github.com/armacleod/quire/blob/main/DESIGN.md">Specification</a>
+          <a class="key quiet" href="https://github.com/armacleod/quire">Source</a>
         </div>
       </div>
-      <svg class="scope" viewBox="0 0 240 240" aria-hidden="true">
-        <circle cx="120" cy="120" r="108" fill="none" stroke="currentColor" stroke-width=".6" opacity=".28"/>
-        <circle cx="120" cy="120" r="78" fill="none" stroke="currentColor" stroke-width=".6" opacity=".4"/>
-        <circle cx="120" cy="120" r="48" fill="none" stroke="var(--struct)" stroke-width="1"/>
-        <circle cx="120" cy="120" r="8" fill="var(--accent)"/>
-        <line x1="120" y1="12" x2="120" y2="228" stroke="currentColor" stroke-width=".4" opacity=".25"/>
-        <line x1="12" y1="120" x2="228" y2="120" stroke="currentColor" stroke-width=".4" opacity=".25"/>
-        <path d="M120 120 L186 54" stroke="var(--accent)" stroke-width="1.2"/>
-        <circle cx="186" cy="54" r="4" fill="none" stroke="var(--accent)" stroke-width="1.2"/>
+      <svg class="mark" viewBox="0 0 280 160" aria-hidden="true">
+        <path d="M8 118 C 48 118, 72 42, 118 42 S 188 128, 272 52" fill="none" stroke="currentColor" stroke-width="1.25"/>
+        <path d="M8 132 C 56 132, 80 64, 126 64 S 196 140, 272 72" fill="none" stroke="currentColor" stroke-width=".6" opacity=".45"/>
+        <line x1="118" y1="16" x2="118" y2="144" stroke="currentColor" stroke-width=".6" opacity=".35"/>
+        <line x1="8" y1="144" x2="272" y2="144" stroke="currentColor" stroke-width=".6" opacity=".35"/>
       </svg>
     </div>
   </header>
   <main>
-    <section class="block" id="color"><div class="wrap split"><div><p class="kicker">01 / Color</p><h2>Roles, not hex in components</h2></div><div><p>Oxide is the only action color. Orbit is structure. Night swaps oxide for phosphor amber — a CRT, not a neon.</p><div class="swatches"><div class="swatch" style="background:var(--bg)">bg<code>--bg</code></div><div class="swatch" style="background:var(--bg-subtle)">subtle<code>--bg-subtle</code></div><div class="swatch" style="background:var(--accent);color:var(--fg-inverse)">accent<code>--accent</code></div><div class="swatch" style="background:var(--struct);color:#f6efe2">struct<code>--struct</code></div><div class="swatch" style="background:var(--danger);color:#fff">danger<code>--danger</code></div><div class="swatch" style="background:var(--bg-inverse);color:var(--fg-inverse)">inverse<code>--bg-inverse</code></div><div class="swatch" style="background:var(--accent-muted)">mist<code>--accent-muted</code></div><div class="swatch" style="background:var(--struct-muted)">orbit mist<code>--struct-muted</code></div></div></div></div></section>
-    <section class="block" id="type"><div class="wrap split"><div><p class="kicker">02 / Type</p><h2>Two jobs</h2></div><div><div class="type-sample"><p class="type-meta">Newsreader · display · 500</p><p class="display" style="font-size:clamp(2rem,4vw,3.2rem)">Dynamic America</p></div><div class="type-sample"><p class="type-meta">Source Sans 3 · body · 400</p><p>Newsreader speaks. Source Sans 3 works. IBM Plex Mono is for <span class="mono">$1,700,000,000</span> and nothing else.</p></div><div class="type-sample"><p class="type-meta">Label · 600 · +0.08em</p><p class="kicker" style="margin:0">Atmosphere · Fiscal 1968 · Electric Boat</p></div></div></div></section>
-    <section class="block" id="controls"><div class="wrap split"><div><p class="kicker">03 / Controls</p><h2>Machined, not squircles</h2></div><div><div class="row" style="margin-bottom:2rem"><button class="btn primary" type="button">Primary</button><button class="btn ghost" type="button">Ghost</button><button class="btn danger" type="button">Danger</button><button class="btn primary" type="button" disabled>Disabled</button></div><div class="row" style="align-items:flex-end;gap:1.5rem"><label class="field"><span class="kicker">Hull number</span><input value="SSN-571" /></label><label class="field"><span class="kicker">Yard</span><input value="Groton" /></label></div><div class="row" style="margin-top:2rem"><article class="panel atmo" style="flex:1;min-width:16rem"><p class="kicker">Sheet</p><h3 style="font:500 1.5rem/1.25 var(--font-display)">Electric Boat</h3><p style="margin:0">Hairline rule. Atmosphere wash allowed. No drop shadow.</p></article><article class="panel" style="flex:1;min-width:16rem"><p class="kicker">Plain sheet</p><h3 style="font:500 1.5rem/1.25 var(--font-display)">Convair</h3><p style="margin:0">Same contract without the gradient.</p></article></div></div></div></section>
-    <section class="block" id="ledger"><div class="wrap split"><div><p class="kicker">04 / Ledger</p><h2>Figures in mono</h2></div><table class="ledger"><thead><tr><th>Division</th><th>Program</th><th style="text-align:right">Backlog</th></tr></thead><tbody><tr><td>Electric Boat</td><td>Nautilus</td><td class="num">418,200,000</td></tr><tr><td>Convair</td><td>F-106</td><td class="num">291,040,000</td></tr><tr><td>Astronautics</td><td>Atlas</td><td class="num">990,760,000</td></tr><tr><td>Canadair</td><td>CL-44</td><td class="num">74,110,000</td></tr></tbody></table></div></section>
-    <section class="block" id="principles"><div class="wrap"><p class="kicker">05 / Principles</p><h2>Steal the method. Leave the livery.</h2><div class="principles"><article><strong>Paper before chrome</strong>Elevation is a rule or a shift in paper tone.</article><article><strong>One signal color</strong>Oxide acts. Orbit structures.</article><article><strong>Type has two jobs</strong>Serif speaks. Sans works. Mono counts.</article><article><strong>Geometry is citation</strong>Orbits on covers — not on every card.</article><article><strong>Pacing over density</strong>Related: 8–12px. Groups: 32–48px.</article><article><strong>States are tokens</strong>No one-off hex in a component file.</article></div></div></section>
+    <section class="block" id="color">
+      <div class="wrap split">
+        <div><p class="legend">01 / Color</p><h2>Plate and paper</h2></div>
+        <div>
+          <p>Plate `#182436`. Paper `#E7EBF0`. Plot `#C5D0DC` is the same ink, lighter. No red. No cyan. No gold.</p>
+          <div class="swatches">
+            <div class="swatch" style="background:var(--bg)">plate<code>--bg</code></div>
+            <div class="swatch" style="background:var(--bg-subtle)">lift<code>--bg-subtle</code></div>
+            <div class="swatch" style="background:var(--paper);color:#182436">paper<code>--paper</code></div>
+            <div class="swatch" style="background:var(--plot);color:#182436">plot<code>--plot</code></div>
+            <div class="swatch" style="background:var(--border)">rule<code>--border</code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="type">
+      <div class="wrap split">
+        <div><p class="legend">02 / Type</p><h2>Source Sans 3</h2></div>
+        <div>
+          <p>Figures in Source Code Pro: <span class="mono">418,200,000</span>.</p>
+          <p class="display" style="font-size:clamp(1.75rem,3vw,2.5rem);margin-top:1.5rem">Electric Boat</p>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="cluster">
+      <div class="wrap split">
+        <div><p class="legend">03 / Cluster</p><h2>Ruled frame</h2></div>
+        <div>
+          <div class="row" style="margin-bottom:2rem">
+            <button class="key live" type="button">Live</button>
+            <button class="key quiet" type="button">Quiet</button>
+            <button class="key halt" type="button">Halt</button>
+            <button class="key live" type="button" disabled>Disabled</button>
+          </div>
+          <div class="grid3">
+            <div class="cluster">
+              <p class="legend">Identifier</p>
+              <label class="field"><span class="legend">Hull</span><input value="SSN-571" /></label>
+            </div>
+            <div class="cluster">
+              <p class="legend">Readout</p>
+              <p class="mono" style="font-size:1.25rem;margin:0">990,760,000</p>
+              <p class="legend" style="margin-top:1rem">Atlas backlog</p>
+            </div>
+            <div class="cluster">
+              <p class="legend">Note</p>
+              <p style="margin:0">Live is paper on plate. Halt is a quieter hairline, not a second hue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><div class="wrap">Quire 0.1 · MIT · <a href="https://github.com/armacleod/quire">github.com/armacleod/quire</a></div></footer>
-  <script>
-    const root=document.documentElement,btn=document.getElementById('theme');
-    const saved=localStorage.getItem('quire-theme');
-    if(saved==='night'){root.setAttribute('data-theme','night');btn.textContent='Paper';btn.setAttribute('aria-pressed','true')}
-    btn.addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='night'?'paper':'night';root.setAttribute('data-theme',next);localStorage.setItem('quire-theme',next);btn.textContent=next==='night'?'Paper':'Night';btn.setAttribute('aria-pressed',next==='night'?'true':'false')});
-  </script>
+  <section class="paper" id="well" data-field="sheet">
+    <div class="wrap">
+      <p class="legend">04 / Well</p>
+      <h2 class="display" style="font-size:clamp(1.75rem,3vw,2.5rem);color:#182436">Paper is inset</h2>
+      <p style="color:#5a6674;max-width:42rem">A document on the plate. Not the default chrome.</p>
+    </div>
+  </section>
+  <section class="block" id="board">
+    <div class="wrap split">
+      <div><p class="legend">05 / Board</p><h2>Figures</h2></div>
+      <table class="board">
+        <thead><tr><th>Division</th><th>Program</th><th style="text-align:right">Backlog</th></tr></thead>
+        <tbody>
+          <tr><td>Electric Boat</td><td>Nautilus</td><td class="num">418,200,000</td></tr>
+          <tr><td>Convair</td><td>F-106</td><td class="num">291,040,000</td></tr>
+          <tr><td>Astronautics</td><td>Atlas</td><td class="num">990,760,000</td></tr>
+          <tr><td>Canadair</td><td>CL-44</td><td class="num">74,110,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap">Quire 0.5 · MIT · <a href="https://github.com/armacleod/quire">github.com/armacleod/quire</a></div>
+  </footer>
 </body>
 </html>
