@@ -1,77 +1,56 @@
 # Quire — design specification
 
-Version 0.5 · 2026-09-20
+Version 0.6 · 2026-09-20
 
 ## Brief
 
-Print ancestry. Void as distance. Dual-use tension. No costume.
+Optimism of the atomic age. The void. Dual-use threat. Those are not moods to whisper. They are three inks.
 
-## Rejected streets
+## What 0.5 did wrong
 
-| Version | Collision |
-|---|---|
-| 0.1 | Anthropic: cream, clay, book serif |
-| 0.2 | Carbon: teal, Plex, layer stack |
-| 0.3 | Blockstream: void, cyan, gold, orbits |
-| 0.4 | S&P Global: paper, process red, offset slabs |
+It ran from every collision until the page was navy, gray type, and a polite curve. That is a bank login. Body copy on `#182436` at `#8A96A4` fails WCAG. A system that does not read and does not feel is not restrained. It is empty.
 
-## Model
+## Inks
 
-**Plate is the page.** Iron blue — press ink, hydrodynamics plate — is the default field.
+Black. White. Cadmium.
 
-**Paper is type and wells.** White sits on the plate. A paper well is a document, not the chrome.
+| Ink | Hex | Job |
+|---|---|---|
+| Black | `#0A0A0A` | Void. Halt. Hairline. Body on white. |
+| White | `#F4F4F1` | Sheet. Body on black. Live key text. |
+| Cadmium | `#F0C400` | Sun, pile, advisory, live fill. Never body text on white. |
 
-**No brand chroma.** Keys are paper-on-ink or hairline. Charts may use a lighter cut of the same ink. No red, no cyan, no gold as identity.
+Cadmium on black is a lamp you cannot ignore. Cadmium on white is a printed plane, large only. No navy. No process red. No cyan. No clay. No second gold.
 
-**Mark is a section cut.** One isobar. Not rings. Not Mondrian slabs.
+Contrast (minimum):
 
-**Clusters, not layers.** Hairline frame, legend, silence.
+- Black on white, white on black: use for all body and UI type.
+- Cadmium on black: large type and keys only. Do not set paragraphs in cadmium.
+- Meta on white: `#3A3A3A` (not gray-400).
+- Meta on black: `#C8C8C8` (not navy-muted).
 
-## Color
+## Fields
 
-### Plate (default · `data-field="plate"`)
+`data-field="void"` — black page, white type, cadmium as the only lamp.
+`data-field="sheet"` — white page, black type, cadmium as a printed plane.
 
-| Token | Hex |
-|---|---|
-| `--plate` | `#182436` |
-| `--plate-lift` | `#223044` |
-| `--paper` | `#E7EBF0` |
-| `--meta` | `#8A96A4` |
-| `--rule` | `#3A4A5C` |
-| `--plot` | `#C5D0DC` |
+Default for product chrome: **void**. Default for long reading: **sheet**. Both are first-class.
 
-`--accent` maps to `--paper`. Inverse text on a live key is `--plate`.
+## Charge
 
-### Sheet well (`data-field="sheet"`)
+- Display type is large. Tracking tight. Sentence case.
+- Cadmium appears at the scale of a chapter, not as a 12px icon.
+- Halt is black on sheet, cadmium on void — not a quieter gray.
+- One live chromatic key per cluster. Cadmium fill, black text.
 
-Paper field `#E7EBF0`, plate text `#182436`, hairline `#C3CAD2`. Same rule: no second hue.
+## Mark
+
+A disc, off-center, cadmium. Sun / pile / aperture. Not rings. Not offset rectangles. Not an isobar graph.
 
 ## Type
 
-Source Sans 3. Source Code Pro for figures. Sentence case. No condensed all-caps hero.
-
-## Space
-
-8px series. Radius 0 on clusters; 2px on keys and fields.
-
-## Motion
-
-120ms hover. No sweep.
-
-## Geometry
-
-Allowed: a single isobar, parallel section ticks, a truncated curve.
-
-Forbidden: concentric rings, Venn, offset rectangles, starfield, red slabs.
-
-## Components
-
-**Key, live** — paper fill, plate text.
-**Key, quiet** — hairline paper.
-**Key, halt** — hairline, meta text.
-**Well** — paper inset on the plate.
-**Cluster** — hairline, legend.
+Source Sans 3. Source Code Pro for figures. Body 1.0625rem / 1.55. Display clamp 2.5–4rem. Focus: 3px cadmium, offset 3px.
 
 ## Anti-patterns
 
-Cream, clay, process red, IBM Blue, cyan-on-black, gold lamps. Plex, Inter, Rigid Square, Geist, Orbitron. Book serifs in product UI. Card elevation. Slogans.
+Navy fields. Gray body on dark. Cream. Clay. Process red as brand. Cyan lamps. Gold-plus-cyan. Plex. Inter. Orbitron. Card shadows. Tiny yellow text on white.
