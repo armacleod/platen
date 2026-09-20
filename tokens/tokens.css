@@ -1,69 +1,115 @@
-/* Quire 0.6 — black, white, cadmium. Void default. */
+/* Quire tokens — paper (default) and night.
+   Apply data-theme="night" on <html> to switch. */
 
 :root,
-[data-field="void"] {
-  color-scheme: dark;
-  --black: #0a0a0a;
-  --white: #f4f4f1;
-  --cadmium: #f0c400;
-  --cadmium-deep: #d9b000;
-  --bg: var(--black);
-  --bg-subtle: #161616;
-  --bg-inverse: var(--white);
-  --fg: var(--white);
-  --fg-muted: #c8c8c8;
-  --fg-subtle: #c8c8c8;
-  --fg-inverse: var(--black);
-  --accent: var(--cadmium);
-  --accent-hover: #ffd21a;
-  --accent-muted: #3a3000;
-  --danger: var(--cadmium);
-  --border: #5a5a5a;
-  --border-strong: var(--white);
-  --focus: var(--cadmium);
-  --overlay: rgba(0, 0, 0, 0.72);
+[data-theme="paper"] {
+  color-scheme: light;
+
+  --paper-0: #f6efe2;
+  --paper-1: #efe6d4;
+  --paper-2: #e4d8c2;
+  --ink-0: #1c1814;
+  --ink-1: #4a433a;
+  --ink-2: #7a7166;
+  --oxide: #c45c1a;
+  --oxide-deep: #9a4310;
+  --oxide-mist: #f3d9c4;
+  --orbit: #2f5f63;
+  --orbit-mist: #d5e2e0;
+  --signal: #9b2f2a;
+  --signal-mist: #f0d4d1;
+  --good: #2f6b45;
+
+  --bg: var(--paper-0);
+  --bg-subtle: var(--paper-1);
+  --bg-inverse: var(--ink-0);
+  --fg: var(--ink-0);
+  --fg-muted: var(--ink-1);
+  --fg-subtle: var(--ink-2);
+  --fg-inverse: var(--paper-0);
+  --accent: var(--oxide);
+  --accent-hover: var(--oxide-deep);
+  --accent-muted: var(--oxide-mist);
+  --struct: var(--orbit);
+  --struct-muted: var(--orbit-mist);
+  --danger: var(--signal);
+  --danger-muted: var(--signal-mist);
+  --success: var(--good);
+  --border: #d4c7b0;
+  --border-strong: var(--ink-0);
+  --focus: var(--oxide);
+  --overlay: rgba(28, 24, 20, 0.48);
+
+  --grad-atmosphere: linear-gradient(165deg, var(--bg) 0%, var(--struct-muted) 100%);
+  --grad-scope: radial-gradient(120% 80% at 80% 0%, var(--accent-muted), transparent 55%);
 }
 
-[data-field="sheet"] {
-  color-scheme: light;
-  --black: #0a0a0a;
-  --white: #f4f4f1;
-  --cadmium: #f0c400;
-  --cadmium-deep: #c9a200;
-  --bg: var(--white);
-  --bg-subtle: #e8e8e3;
-  --bg-inverse: var(--black);
-  --fg: var(--black);
-  --fg-muted: #3a3a3a;
-  --fg-subtle: #3a3a3a;
-  --fg-inverse: var(--black);
-  --accent: var(--cadmium);
-  --accent-hover: var(--cadmium-deep);
-  --accent-muted: #f7e7a0;
-  --danger: var(--black);
-  --border: #7a7a7a;
-  --border-strong: var(--black);
-  --focus: var(--black);
-  --overlay: rgba(10, 10, 10, 0.56);
+[data-theme="night"] {
+  color-scheme: dark;
+
+  --bg: #161410;
+  --bg-subtle: #221e18;
+  --bg-inverse: #f3ebe0;
+  --fg: #f3ebe0;
+  --fg-muted: #c4b8a6;
+  --fg-subtle: #8a7f70;
+  --fg-inverse: #1c1814;
+  --accent: #e8a04a;
+  --accent-hover: #f0b56a;
+  --accent-muted: #3a2a18;
+  --struct: #7aa3a6;
+  --struct-muted: #243436;
+  --danger: #e07068;
+  --danger-muted: #3a201e;
+  --success: #6fbf88;
+  --border: #3a342c;
+  --border-strong: #f3ebe0;
+  --focus: #e8a04a;
+  --overlay: rgba(0, 0, 0, 0.64);
+
+  --grad-atmosphere: linear-gradient(165deg, var(--bg) 0%, var(--struct-muted) 100%);
+  --grad-scope: radial-gradient(120% 80% at 80% 0%, var(--accent-muted), transparent 55%);
 }
 
 :root {
-  --font-display: "Source Sans 3", "Segoe UI", sans-serif;
-  --font-ui: "Source Sans 3", "Segoe UI", sans-serif;
-  --font-mono: "Source Code Pro", ui-monospace, monospace;
-  --type-display: 500 clamp(2.5rem, 5vw + 0.5rem, 4rem) / 1.05 var(--font-display);
-  --type-title: 500 1.5rem / 1.2 var(--font-display);
-  --type-heading: 500 1.125rem / 1.3 var(--font-display);
-  --type-body: 400 1.0625rem / 1.55 var(--font-ui);
-  --type-ui: 600 0.9375rem / 1.4 var(--font-ui);
-  --type-legend: 600 0.75rem / 1.3 var(--font-ui);
-  --type-mono: 400 0.875rem / 1.4 var(--font-mono);
-  --s-02: 0.25rem; --s-03: 0.5rem; --s-04: 0.75rem; --s-05: 1rem;
-  --s-06: 1.5rem; --s-07: 2rem; --s-08: 2.5rem; --s-10: 4rem;
-  --r-0: 0; --r-1: 2px;
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-ui: "Source Sans 3", "Source Sans Pro", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", monospace;
+
+  --type-display: 500 clamp(2.5rem, 4vw + 1rem, 4.25rem)/1.1 var(--font-display);
+  --type-title: 500 2rem/1.2 var(--font-display);
+  --type-heading: 500 1.5rem/1.25 var(--font-display);
+  --type-subhead: 600 1.125rem/1.35 var(--font-ui);
+  --type-body: 400 1.0625rem/1.55 var(--font-ui);
+  --type-ui: 400 0.9375rem/1.4 var(--font-ui);
+  --type-label: 600 0.75rem/1.3 var(--font-ui);
+  --type-mono: 400 0.8125rem/1.45 var(--font-mono);
+
+  --s-01: 0.125rem;
+  --s-02: 0.25rem;
+  --s-03: 0.5rem;
+  --s-04: 0.75rem;
+  --s-05: 1rem;
+  --s-06: 1.5rem;
+  --s-07: 2rem;
+  --s-08: 2.5rem;
+  --s-09: 3rem;
+  --s-10: 4rem;
+  --s-11: 5rem;
+  --s-12: 6rem;
+
+  --r-0: 0;
+  --r-1: 2px;
+
   --rule: 1px solid var(--border);
   --rule-strong: 1px solid var(--border-strong);
-  --t-fast: 120ms;
+
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.64, 0, 0.78, 0);
+  --t-fast: 120ms;
+  --t-mid: 220ms;
+  --t-slow: 400ms;
+
   --page-max: 72rem;
+  --gutter: var(--s-05);
 }

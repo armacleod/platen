@@ -1,6 +1,6 @@
 @import "../tokens/tokens.css";
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap");
 
 *,
 *::before,
@@ -12,6 +12,7 @@ html {
   background: var(--bg);
   color: var(--fg);
   font: var(--type-body);
+  font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -24,13 +25,14 @@ h1,
 h2,
 h3 {
   font: var(--type-heading);
-  letter-spacing: -0.02em;
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
   margin: 0 0 var(--s-04);
 }
 
 h1 {
   font: var(--type-title);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 p {
@@ -63,7 +65,8 @@ a:hover {
 
 .quire-display {
   font: var(--type-display);
-  letter-spacing: -0.03em;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 

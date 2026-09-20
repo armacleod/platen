@@ -1,13 +1,15 @@
 {
   "name": "quire",
-  "version": "0.6.0",
-  "description": "Three inks. Void and sheet. Svelte primitives.",
+  "version": "0.1.0",
+  "description": "Mid-century aerospace report craft + Carbon-grade tokens, for Svelte.",
   "type": "module",
   "exports": {
     ".": "./src/lib/index.js",
     "./tokens.css": "./tokens/tokens.css",
     "./app.css": "./src/app.css"
   },
-  "peerDependencies": { "svelte": "^5.0.0" },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
   "license": "MIT"
 }
