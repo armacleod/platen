@@ -1,7 +1,7 @@
 {
   "name": "quire",
-  "version": "0.2.0",
-  "description": "Token system and Svelte primitives. Cool canvas, teal accent, Plex Sans + Mono.",
+  "version": "0.3.0",
+  "description": "Two fields, three signals, cluster layout. Svelte primitives.",
   "type": "module",
   "exports": {
     ".": "./src/lib/index.js",

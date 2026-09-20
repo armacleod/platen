@@ -1,14 +1,20 @@
 # Quire
 
-Token system and Svelte primitives for product UI. Cool uncoated canvas, jewel teal, IBM Plex Sans + Plex Mono. Hairline rules instead of shadows.
+Token system and Svelte primitives. Two fields (void, sheet) and three signals (beacon, flare, abort). Clusters instead of card layers.
 
-Version 0.2 drops the cream/serif/terracotta direction from 0.1 (too close to the current Anthropic look, and a poor reading of the mid-century source).
+Void is the default operating field. Sheet is print and daylight.
+
+Not a Carbon recolor. Not cream-and-serif.
 
 **Spec:** [DESIGN.md](./DESIGN.md)  
-**Specimen:** [index.html](./index.html) — intended live URL [armacleod.github.io/quire](https://armacleod.github.io/quire/)
+**Specimen:** [index.html](./index.html)
 
 ```css
 @import './tokens/tokens.css';
 ```
 
-Copy `src/lib` into a SvelteKit project. Themes: default day, or `data-theme="night"` on `<html>`.
+```html
+<html data-field="void">
+```
+
+Copy `src/lib` into a SvelteKit project. Version 0.3.
