@@ -1,7 +1,7 @@
 {
   "name": "quire",
-  "version": "0.1.0",
-  "description": "Mid-century aerospace report craft + Carbon-grade tokens, for Svelte.",
+  "version": "0.2.0",
+  "description": "Token system and Svelte primitives. Cool canvas, teal accent, Plex Sans + Mono.",
   "type": "module",
   "exports": {
     ".": "./src/lib/index.js",

@@ -1,28 +1,14 @@
 # Quire
 
-A design system for sites and Svelte apps that should feel like a mid-century aerospace annual report that learned tokens from IBM Carbon.
+Token system and Svelte primitives for product UI. Cool uncoated canvas, jewel teal, IBM Plex Sans + Plex Mono. Hairline rules instead of shadows.
 
-**Specimen:** [armacleod.github.io/quire](https://armacleod.github.io/quire)
+Version 0.2 drops the cream/serif/terracotta direction from 0.1 (too close to the current Anthropic look, and a poor reading of the mid-century source).
 
-Carbon is systematic. The Nitsche-era General Dynamics reports were systematic *and* warm: paper, ink, orbital color, cinematic pacing, hairline rules. Quire keeps Carbon’s discipline (role-based tokens, an 8px spacing scale, explicit states) and drops the fluorescent blue, the gray-on-gray layering, and the clinical flatness.
-
-**Not a Carbon fork.** Steal the *method*. Leave the IBM livery.
-
-## Use it
+**Spec:** [DESIGN.md](./DESIGN.md)  
+**Specimen:** [index.html](./index.html) — intended live URL [armacleod.github.io/quire](https://armacleod.github.io/quire/)
 
 ```css
 @import './tokens/tokens.css';
 ```
 
-Or copy `src/lib` into a SvelteKit project. See [DESIGN.md](./DESIGN.md).
-
-## Stack
-
-- Tokens: plain CSS custom properties
-- Components: Svelte 5
-- Type: Newsreader + Source Sans 3 + IBM Plex Mono
-- Reference site: `index.html` (self-contained), deployed via GitHub Pages
-
-## Themes
-
-`data-theme="paper"` (default) and `data-theme="night"` on `<html>`.
+Copy `src/lib` into a SvelteKit project. Themes: default day, or `data-theme="night"` on `<html>`.
