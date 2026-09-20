@@ -1,88 +1,69 @@
-/* Quire tokens — day (default) and night.
-   data-theme="night" on <html> switches. */
+/* Quire 0.5 — plate is default. Sheet is a paper well. */
 
 :root,
-[data-theme="day"] {
-  color-scheme: light;
-
-  --canvas-0: #f3f4f2;
-  --canvas-1: #e6e8e5;
-  --ink-0: #16181a;
-  --ink-1: #4a5158;
-  --ink-2: #6e777e;
-  --teal: #0b6e73;
-  --teal-deep: #08575b;
-  --teal-wash: #d4e6e6;
-  --red: #b31b1b;
-  --red-wash: #f0d6d6;
-  --good: #1f6b45;
-
-  --bg: var(--canvas-0);
-  --bg-subtle: var(--canvas-1);
-  --bg-inverse: var(--ink-0);
-  --fg: var(--ink-0);
-  --fg-muted: var(--ink-1);
-  --fg-subtle: var(--ink-2);
-  --fg-inverse: #f3f4f2;
-  --accent: var(--teal);
-  --accent-hover: var(--teal-deep);
-  --accent-muted: var(--teal-wash);
-  --struct: var(--teal);
-  --struct-muted: var(--teal-wash);
-  --danger: var(--red);
-  --danger-muted: var(--red-wash);
-  --success: var(--good);
-  --border: #c5c9c6;
-  --border-strong: var(--ink-0);
-  --focus: var(--teal);
-  --overlay: rgba(22, 24, 26, 0.5);
-
-  --grad-atmosphere: linear-gradient(165deg, var(--bg) 0%, var(--struct-muted) 100%);
-  --grad-scope: radial-gradient(120% 80% at 80% 0%, var(--accent-muted), transparent 55%);
-}
-
-[data-theme="night"] {
+[data-field="plate"] {
   color-scheme: dark;
 
-  --bg: #0e1112;
-  --bg-subtle: #181c1e;
-  --bg-inverse: #f3f4f2;
-  --fg: #e8ebe9;
-  --fg-muted: #a8b0b4;
-  --fg-subtle: #7a8388;
-  --fg-inverse: #16181a;
-  --accent: #5eb8bc;
-  --accent-hover: #7ec9cc;
-  --accent-muted: #163235;
-  --struct: #5eb8bc;
-  --struct-muted: #163235;
-  --danger: #e07070;
-  --danger-muted: #3a2020;
-  --success: #6fbf88;
-  --border: #2a3033;
-  --border-strong: #e8ebe9;
-  --focus: #5eb8bc;
-  --overlay: rgba(0, 0, 0, 0.64);
+  --plate: #182436;
+  --plate-lift: #223044;
+  --paper: #e7ebf0;
+  --meta: #8a96a4;
+  --plot: #c5d0dc;
 
-  --grad-atmosphere: linear-gradient(165deg, var(--bg) 0%, var(--struct-muted) 100%);
-  --grad-scope: radial-gradient(120% 80% at 80% 0%, var(--accent-muted), transparent 55%);
+  --bg: var(--plate);
+  --bg-subtle: var(--plate-lift);
+  --bg-inverse: var(--paper);
+  --fg: var(--paper);
+  --fg-muted: var(--meta);
+  --fg-subtle: #6b7786;
+  --fg-inverse: var(--plate);
+  --accent: var(--paper);
+  --accent-hover: #ffffff;
+  --accent-muted: #2c3b50;
+  --struct: var(--paper);
+  --danger: var(--meta);
+  --success: var(--plot);
+  --border: #3a4a5c;
+  --border-strong: var(--paper);
+  --focus: var(--paper);
+  --overlay: rgba(12, 18, 28, 0.64);
+}
+
+[data-field="sheet"] {
+  color-scheme: light;
+
+  --bg: #e7ebf0;
+  --bg-subtle: #d8dee6;
+  --bg-inverse: #182436;
+  --fg: #182436;
+  --fg-muted: #5a6674;
+  --fg-subtle: #7a8694;
+  --fg-inverse: #e7ebf0;
+  --accent: #182436;
+  --accent-hover: #0f1722;
+  --accent-muted: #d0d7e0;
+  --struct: #182436;
+  --danger: #182436;
+  --success: #1f5c3a;
+  --border: #c3cad2;
+  --border-strong: #182436;
+  --focus: #182436;
+  --overlay: rgba(24, 36, 54, 0.48);
 }
 
 :root {
-  --font-display: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif;
-  --font-ui: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", monospace;
+  --font-display: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-ui: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-mono: "Source Code Pro", ui-monospace, monospace;
 
-  --type-display: 500 clamp(2.25rem, 3.5vw + 1rem, 3.5rem) / 1.12 var(--font-display);
-  --type-title: 500 1.75rem / 1.2 var(--font-display);
-  --type-heading: 500 1.25rem / 1.3 var(--font-display);
-  --type-subhead: 600 1.0625rem / 1.35 var(--font-ui);
+  --type-display: 500 clamp(2.25rem, 4vw + 0.5rem, 3.5rem) / 1.1 var(--font-display);
+  --type-title: 500 1.5rem / 1.2 var(--font-display);
+  --type-heading: 500 1.125rem / 1.3 var(--font-display);
   --type-body: 400 1rem / 1.5 var(--font-ui);
   --type-ui: 400 0.9375rem / 1.4 var(--font-ui);
-  --type-label: 600 0.6875rem / 1.3 var(--font-ui);
-  --type-mono: 400 0.8125rem / 1.45 var(--font-mono);
+  --type-legend: 600 0.6875rem / 1.25 var(--font-ui);
+  --type-mono: 400 0.8125rem / 1.4 var(--font-mono);
 
-  --s-01: 0.125rem;
   --s-02: 0.25rem;
   --s-03: 0.5rem;
   --s-04: 0.75rem;
@@ -90,23 +71,14 @@
   --s-06: 1.5rem;
   --s-07: 2rem;
   --s-08: 2.5rem;
-  --s-09: 3rem;
   --s-10: 4rem;
-  --s-11: 5rem;
-  --s-12: 6rem;
 
   --r-0: 0;
   --r-1: 2px;
-
   --rule: 1px solid var(--border);
   --rule-strong: 1px solid var(--border-strong);
-
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-in: cubic-bezier(0.64, 0, 0.78, 0);
   --t-fast: 120ms;
   --t-mid: 220ms;
-  --t-slow: 400ms;
-
   --page-max: 72rem;
-  --gutter: var(--s-05);
 }

@@ -1,70 +1,77 @@
 # Quire — design specification
 
-Version 0.2 · 2026-09-20
+Version 0.5 · 2026-09-20
 
-## Diagnosis (0.1)
+## Brief
 
-Version 0.1 used uncoated cream, burnt sienna, and a book serif (Newsreader) as the product voice. That combination is the current default for “serious technology that wants to feel human”: Anthropic / Claude (ivory `#faf9f5`, clay `#c96442`–`#d97757`, proprietary serif), and a large set of 2024–2026 AI and editorial SaaS sites that copied it.
+Print ancestry. Void as distance. Dual-use tension. No costume.
 
-It is also a misreading of the source. Erik Nitsche’s General Dynamics work was Swiss modernism applied to a defense contractor: white or cool fields, jewel teal and primary pigment, small discrete type (Didot on posters, not a soft reading serif on every heading), geometry as diagram. Warmth came from printing and photography, not from a yellowed canvas and terracotta buttons.
+## Rejected streets
 
-0.2 throws out the salon palette and the serif-as-personality rule.
+| Version | Collision |
+|---|---|
+| 0.1 | Anthropic: cream, clay, book serif |
+| 0.2 | Carbon: teal, Plex, layer stack |
+| 0.3 | Blockstream: void, cyan, gold, orbits |
+| 0.4 | S&P Global: paper, process red, offset slabs |
 
-## Intent
+## Model
 
-Quire is a token system and a small set of Svelte primitives for sites and apps that should read as instruments: grid, hairline, one accent, no chrome.
+**Plate is the page.** Iron blue — press ink, hydrodynamics plate — is the default field.
 
-It keeps Carbon’s method (named roles, 8px space, explicit states) and takes from mid-century aerospace reports only what survives without costume: pacing, line instead of shadow, diagram geometry used rarely.
+**Paper is type and wells.** White sits on the plate. A paper well is a document, not the chrome.
 
-## What this is not
+**No brand chroma.** Keys are paper-on-ink or hairline. Charts may use a lighter cut of the same ink. No red, no cyan, no gold as identity.
 
-- Not cream paper, clay/terracotta, oat, olive, or “warm gray.”
-- Not a book serif for product UI.
-- Not IBM Blue on Cool Gray 10.
-- Not amber-on-charcoal “CRT night.”
-- Not Inter, Geist, or system-ui as the brand face.
-- Not marketing copy that performs taste.
+**Mark is a section cut.** One isobar. Not rings. Not Mondrian slabs.
 
-## Principles
-
-1. **Sheet, not glass.** Elevation is a 1px rule or a shift in canvas tone.
-2. **One chromatic action.** Teal is accent and structure. Red is only danger. There is no second brand hue for buttons.
-3. **One grotesque, one mono.** Headings are the UI face at a larger size. Mono is for figures and code.
-4. **Geometry is a diagram.** Concentric ticks and orbits belong on empty states and covers. They are not card texture.
-5. **Space is the hierarchy.** Related: 8–12px. Groups: 32–48px.
-6. **States are tokens.** Hover, focus, active, selected, disabled are named. No hex in component files.
-7. **Contrast.** Body on canvas ≥ 7:1. UI text ≥ 4.5:1. Focus ≥ 3:1 against its neighbor.
+**Clusters, not layers.** Hairline frame, legend, silence.
 
 ## Color
 
-Cool uncoated stock, near-black ink, jewel teal.
+### Plate (default · `data-field="plate"`)
 
-| Name | Hex | Note |
-|---|---|---|
-| Canvas 0 | `#F3F4F2` | Page. Cool, slightly green-gray. Not ivory. |
-| Canvas 1 | `#E6E8E5` | Recessed band, zebra |
-| Ink 0 | `#16181A` | Text |
-| Teal | `#0B6E73` | Accent, links, focus |
-| Teal deep | `#08575B` | Hover |
-| Teal wash | `#D4E6E6` | Subtle fill |
-| Red | `#B31B1B` | Danger only |
-| Night 0 | `#0E1112` | Night page |
-| Night teal | `#5EB8BC` | Night accent (same hue, not amber) |
+| Token | Hex |
+|---|---|
+| `--plate` | `#182436` |
+| `--plate-lift` | `#223044` |
+| `--paper` | `#E7EBF0` |
+| `--meta` | `#8A96A4` |
+| `--rule` | `#3A4A5C` |
+| `--plot` | `#C5D0DC` |
 
-Role tokens live in `tokens/tokens.css`. `--struct` and `--accent` share a hue on purpose.
+`--accent` maps to `--paper`. Inverse text on a live key is `--plate`.
 
-## Typography
+### Sheet well (`data-field="sheet"`)
 
-IBM Plex Sans for display, heading, UI, and body. IBM Plex Mono for figures and code. Didot is allowed only on a printed cover; it is not shipped in the web tokens.
+Paper field `#E7EBF0`, plate text `#182436`, hairline `#C3CAD2`. Same rule: no second hue.
 
-## Layout
+## Type
 
-8px scale. Page max `72rem`. Hairline rules, no shadow. Radius 0 on sheets, 2px on controls.
+Source Sans 3. Source Code Pro for figures. Sentence case. No condensed all-caps hero.
 
-## Voice
+## Space
 
-Captions, not slogans.
+8px series. Radius 0 on clusters; 2px on keys and fields.
+
+## Motion
+
+120ms hover. No sweep.
+
+## Geometry
+
+Allowed: a single isobar, parallel section ticks, a truncated curve.
+
+Forbidden: concentric rings, Venn, offset rectangles, starfield, red slabs.
+
+## Components
+
+**Key, live** — paper fill, plate text.
+**Key, quiet** — hairline paper.
+**Key, halt** — hairline, meta text.
+**Well** — paper inset on the plate.
+**Cluster** — hairline, legend.
 
 ## Anti-patterns
 
-Cream/ivory canvases. Terracotta/clay/rust accents. Book serifs in product UI. Phosphor amber dark mode. IBM Blue 60. Inter/Geist. A second chromatic button color.
+Cream, clay, process red, IBM Blue, cyan-on-black, gold lamps. Plex, Inter, Rigid Square, Geist, Orbitron. Book serifs in product UI. Card elevation. Slogans.
