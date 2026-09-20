@@ -1,15 +1,13 @@
 {
   "name": "quire",
-  "version": "0.4.0",
-  "description": "Sheet field, process red, cluster layout. Svelte primitives.",
+  "version": "0.5.0",
+  "description": "Plate field, paper keys, cluster layout. Svelte primitives.",
   "type": "module",
   "exports": {
     ".": "./src/lib/index.js",
     "./tokens.css": "./tokens/tokens.css",
     "./app.css": "./src/app.css"
   },
-  "peerDependencies": {
-    "svelte": "^5.0.0"
-  },
+  "peerDependencies": { "svelte": "^5.0.0" },
   "license": "MIT"
 }
