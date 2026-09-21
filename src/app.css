@@ -22,7 +22,7 @@ body {
 
 h1 {
   font: var(--type-title);
-  font-stretch: 118%;
+  font-stretch: 102%;
   letter-spacing: -0.02em;
   margin: 0 0 var(--s-04);
 }
@@ -30,7 +30,7 @@ h1 {
 h2,
 h3 {
   font: var(--type-heading);
-  font-stretch: 110%;
+  font-stretch: 100%;
   letter-spacing: -0.015em;
   margin: 0 0 var(--s-04);
 }
@@ -65,8 +65,8 @@ a:hover {
 
 .quire-display {
   font: var(--type-display);
-  font-stretch: 122%;
-  letter-spacing: -0.025em;
+  font-stretch: 100%;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 

@@ -20,8 +20,8 @@ No off-white and process-red slabs. No amber CRT night.
 1. **Two fields, one page.** Sheet grounds work. Void grounds orientation.
    A page without void has no tension. A page without sheet has no record.
 2. **One signal hue.** Ember acts. Slate structures. Nothing else competes.
-3. **Type is grotesk, set by width and weight.** Archivo Expanded speaks
-   on covers. Archivo works in UI. Plex Mono counts values. No book serif.
+3. **Type is grotesk, set by weight.** Archivo Black speaks
+   on covers at normal width. Archivo works in UI. Plex Mono counts values. No book serif.
 4. **The mark is a section-cut, not an orbit.** A quartered square with one
    ember quadrant and a registration cross. Target, drawing, and record.
 5. **Line before shadow.** Elevation is a rule or a tone shift. No shadows.
@@ -72,7 +72,7 @@ Two are allowed. Both are printing moves, not rendering moves.
 
 | Role | Face | Notes |
 |---|---|---|
-| Cover and title | Archivo Expanded 800 | Tight, −0.025em, sentence case |
+| Cover and title | Archivo 800, normal width | Tight, −0.02em, sentence case |
 | UI and body | Archivo 400/600 | Left aligned, ragged right |
 | Values | IBM Plex Mono 400/500 | Tabular figures, uppercase labels |
 

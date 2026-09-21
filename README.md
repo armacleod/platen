@@ -22,7 +22,7 @@ Rule, Badge, Notice, Tabs, Dialog. See DESIGN.md.
 
 - Tokens: plain CSS custom properties, three tiers
 - Components: Svelte 5
-- Type: Archivo (Expanded display) + IBM Plex Mono
+- Type: Archivo (800 display, normal width) + IBM Plex Mono
 - Reference site: `index.html` (self-contained), deployed via GitHub Pages
 
 ## Themes

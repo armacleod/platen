@@ -121,7 +121,8 @@
   --font-ui: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", monospace;
 
-  /* Display uses Archivo Expanded via font-stretch where available. */
+  /* Display is Archivo at normal width, 800 weight, tight tracking.
+     No expanded cut: the wide measure fought the grid. */
   --type-display: 800 clamp(2.75rem, 5vw + 1rem, 4.75rem)/1.02 var(--font-display);
   --type-title: 800 2rem/1.1 var(--font-display);
   --type-heading: 700 1.375rem/1.2 var(--font-display);
