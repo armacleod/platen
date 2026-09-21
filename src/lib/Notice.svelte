@@ -3,7 +3,7 @@
   let { tone = 'info', title = '', children } = $props();
 </script>
 
-<div class={['quire-notice', tone]} role={tone === 'danger' ? 'alert' : 'status'}>
+<div class={['platen-notice', tone]} role={tone === 'danger' ? 'alert' : 'status'}>
   <span class="bar" aria-hidden="true"></span>
   <div>
     {#if title}<strong>{title}</strong>{/if}
@@ -12,7 +12,7 @@
 </div>
 
 <style>
-  .quire-notice {
+  .platen-notice {
     display: grid;
     grid-template-columns: 4px 1fr;
     gap: var(--s-04);

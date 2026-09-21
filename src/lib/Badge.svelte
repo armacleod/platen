@@ -3,12 +3,12 @@
   let { tone = 'neutral', children } = $props();
 </script>
 
-<span class={['quire-badge', tone]}>
+<span class={['platen-badge', tone]}>
   {@render children?.()}
 </span>
 
 <style>
-  .quire-badge {
+  .platen-badge {
     display: inline-flex;
     align-items: center;
     min-height: var(--target-min);

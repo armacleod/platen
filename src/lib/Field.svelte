@@ -12,8 +12,8 @@
   const id = $props.id();
 </script>
 
-<label class="quire-field">
-  <span class="quire-kicker">{label}</span>
+<label class="platen-field">
+  <span class="platen-kicker">{label}</span>
   <input {id} {name} {type} {disabled} bind:value aria-invalid={error ? 'true' : undefined} aria-describedby={hint || error ? id + '-msg' : undefined} />
   {#if error}
     <span class="msg err" id={id + '-msg'}>{error}</span>
@@ -23,7 +23,7 @@
 </label>
 
 <style>
-  .quire-field {
+  .platen-field {
     display: flex;
     flex-direction: column;
     gap: var(--s-02);

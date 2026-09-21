@@ -1,4 +1,4 @@
-/* Quire 1.0 tokens — Ledger and the Void.
+/* Platen 1.0 tokens — Ledger and the Void.
    Three tiers: primitives (never use in components) → semantic roles (use)
    → component aliases (use). Switch with data-theme="sheet" | "void" on <html>.
    Sheet is the default document field. Void is the instrument field.

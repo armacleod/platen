@@ -3,12 +3,12 @@
   let { variant = 'primary', size = 'md', disabled = false, type = 'button', children, onclick } = $props();
 </script>
 
-<button class={['quire-btn', variant, size]} {type} {disabled} {onclick}>
+<button class={['platen-btn', variant, size]} {type} {disabled} {onclick}>
   {@render children?.()}
 </button>
 
 <style>
-  .quire-btn {
+  .platen-btn {
     appearance: none;
     display: inline-flex;
     align-items: center;

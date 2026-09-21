@@ -2,14 +2,14 @@
   let { strong = false, label = '' } = $props();
 </script>
 
-<div class={['quire-rule', strong && 'strong']} role="separator">
+<div class={['platen-rule', strong && 'strong']} role="separator">
   {#if label}
     <span>{label}</span>
   {/if}
 </div>
 
 <style>
-  .quire-rule {
+  .platen-rule {
     display: flex;
     align-items: center;
     gap: var(--s-04);

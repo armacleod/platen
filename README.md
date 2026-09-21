@@ -1,4 +1,4 @@
-# Quire 1.0
+# Platen 1.0
 
 A design system for sites and Svelte apps: the ledger and the void.
 

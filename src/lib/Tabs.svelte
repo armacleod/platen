@@ -5,7 +5,7 @@
   });
 </script>
 
-<div class="quire-tabs" role="tablist" aria-label="Sections">
+<div class="platen-tabs" role="tablist" aria-label="Sections">
   {#each tabs as t}
     <button
       role="tab"
@@ -18,7 +18,7 @@
 </div>
 
 <style>
-  .quire-tabs {
+  .platen-tabs {
     display: flex;
     gap: 0;
     border-bottom: var(--rule-strong);

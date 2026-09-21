@@ -1,10 +1,10 @@
-# Quire 1.0 — design specification
+# Platen 1.0 — design specification
 
 Version 1.0 · 2026-09-20 · Rebuilt from principles. Supersedes 0.1–0.6.
 
 ## Thesis
 
-Quire is the ledger and the void.
+Platen is the ledger and the void.
 
 - The **sheet** is a neutral document field for reading and work.
 - The **void** is a near-black instrument field for orientation, figures, and covers.
@@ -107,7 +107,7 @@ No bounce, no spring. `prefers-reduced-motion` keeps opacity only.
 
 ## Mark and diagram
 
-The Quire section-mark: a 32-unit square, ink hairline border, internal
+The Platen section-mark: a 32-unit square, ink hairline border, internal
 cross at thirds, one ember quadrant. Drawn as SVG in the specimen and as
 `mark.svg`. Diagram vocabulary: crosshairs, section-cuts, contour ticks,
 fragment bars, dotted leaders. No orbits, no radar sweeps, no glow.

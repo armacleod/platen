@@ -56,32 +56,32 @@ a:hover {
   outline-offset: 2px;
 }
 
-.quire-kicker {
+.platen-kicker {
   font: var(--type-label);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fg-subtle);
 }
 
-.quire-display {
+.platen-display {
   font: var(--type-display);
   font-stretch: 100%;
   letter-spacing: -0.02em;
   margin: 0;
 }
 
-.quire-mono {
+.platen-mono {
   font: var(--type-mono);
   font-variant-numeric: tabular-nums;
 }
 
-.quire-wrap {
+.platen-wrap {
   width: min(var(--page-max), calc(100% - var(--s-07) * 2));
   margin-inline: auto;
 }
 
 @media (max-width: 640px) {
-  .quire-wrap {
+  .platen-wrap {
     width: min(var(--page-max), calc(100% - var(--s-05) * 2));
   }
 }
