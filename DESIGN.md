@@ -29,6 +29,10 @@ No off-white and process-red slabs. No amber CRT night.
    read a token. No one-off hex in components.
 7. **Contrast is a constraint.** Body ink on sheet 16:1. Ember text variants
    pass 4.5:1 minimum. Focus rings pass 3:1 against adjacent grounds.
+   Danger behaves like an e-stop: always solid, always legible; hover moves
+   toward alarm (brighter), never toward wash. No hover state anywhere in the
+   system may drop below 4.5:1. Void grounds carry explicit values, never
+   page-theme variables, so a theme switch cannot silently recolor them.
 
 ## Color
 
