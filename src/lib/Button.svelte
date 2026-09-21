@@ -77,16 +77,7 @@
   .danger {
     background: var(--button-danger-bg);
     border-color: var(--button-danger-bg);
-    color: #fff;
-  }
-
-  /* Stop-square: shape coding so danger never depends on hue alone. */
-  .danger::before {
-    content: '';
-    width: 0.62em;
-    height: 0.62em;
-    flex: none;
-    background: currentColor;
+    color: var(--button-danger-fg);
   }
 
   .danger:hover:not(:disabled) {

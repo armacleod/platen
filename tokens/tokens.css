@@ -63,9 +63,11 @@
   --button-primary-fg: var(--fg-on-fill);
   --button-primary-hover: var(--accent-hover);
   --button-primary-active: var(--accent-active);
-  /* E-stop red is hardware: identical fills on sheet and void. */
-  --button-danger-bg: #c8102e;
-  --button-danger-hover: #d4202f;
+  /* Danger rests in the inverse field and ignites to signal red on contact.
+     Same tokens both themes; bg-inverse resolves per theme. */
+  --button-danger-bg: var(--bg-inverse);
+  --button-danger-fg: var(--fg-inverse);
+  --button-danger-hover: #c8102e;
   --button-danger-active: #5c0e1a;
   --field-bg: var(--bg-raised);
   --field-border: var(--border);
@@ -113,9 +115,11 @@
   --button-primary-fg: var(--fg-on-fill);
   --button-primary-hover: var(--accent-hover);
   --button-primary-active: var(--accent-active);
-  /* E-stop red is hardware: identical fills on sheet and void. */
-  --button-danger-bg: #c8102e;
-  --button-danger-hover: #d4202f;
+  /* Danger rests in the inverse field and ignites to signal red on contact.
+     Same tokens both themes; bg-inverse resolves per theme. */
+  --button-danger-bg: var(--bg-inverse);
+  --button-danger-fg: var(--fg-inverse);
+  --button-danger-hover: #c8102e;
   --button-danger-active: #5c0e1a;
   --field-bg: var(--bg-subtle);
   --field-border: var(--border);

@@ -19,7 +19,9 @@ No off-white and process-red slabs. No amber CRT night.
 
 1. **Two fields, one page.** Sheet grounds work. Void grounds orientation.
    A page without void has no tension. A page without sheet has no record.
-2. **One signal hue.** Ember acts. Slate structures. Nothing else competes.
+2. **Ember acts; red warns.** Ember is the only action color. Signal red
+   appears solely on destructive controls in hover and active states — never
+   at rest, never as decoration. No two solid buttons share a hue family.
 3. **Type is grotesk, set by weight.** Archivo Black speaks
    on covers at normal width. Archivo works in UI. Plex Mono counts values. No book serif.
 4. **The mark is a section-cut, not an orbit.** A quartered square with one
@@ -116,10 +118,9 @@ Every component reads tokens only. Sizes sm/md/lg where applicable.
 Minimum target 24px; buttons ship 28/40/48px.
 
 - **Button**: primary (ember fill), secondary (strong-rule outline),
-  ghost (accent text), danger (solid signal-red fill, brighter and cooler than
-  ember, identical on both themes like hardware; stop-square prefix so danger
-  never depends on hue alone; hover brightens toward alarm, active drops to
-  near-black maroon). Destructive actions use destructive verbs.
+  ghost (accent text), danger (inverse-field rest, signal-red hover and
+  active; cold at rest so it cannot read as primary, armed on contact).
+  Destructive actions use destructive verbs.
 - **Field**: raised fill, hairline, label above, 2px focus ring offset 2px,
   2px danger rule with caption on error.
 - **Badge**: uppercase mono-adjacent label, full radius, four tones.
