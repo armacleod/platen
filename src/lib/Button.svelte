@@ -75,25 +75,30 @@
   }
 
   .danger {
-    background: var(--danger);
-    border-color: var(--danger);
+    background: var(--button-danger-bg);
+    border-color: var(--button-danger-bg);
     color: #fff;
   }
 
+  /* Stop-square: shape coding so danger never depends on hue alone. */
+  .danger::before {
+    content: '';
+    width: 0.62em;
+    height: 0.62em;
+    flex: none;
+    background: currentColor;
+  }
+
   .danger:hover:not(:disabled) {
-    background: var(--danger-hover);
-    border-color: var(--danger-hover);
+    background: var(--button-danger-hover);
+    border-color: var(--button-danger-hover);
     color: #fff;
   }
 
   .danger:active:not(:disabled) {
-    background: var(--danger-active);
-    border-color: var(--danger-active);
+    background: var(--button-danger-active);
+    border-color: var(--button-danger-active);
     color: #fff;
-  }
-
-  [data-theme="void"] .danger:not(:active):not(:disabled) {
-    color: var(--q-void);
   }
 
   :disabled {
