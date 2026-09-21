@@ -49,6 +49,8 @@
   --struct-muted: var(--q-slate-mist);
 
   --danger: var(--q-crimson);
+  --danger-hover: #7d1224;
+  --danger-active: #7d1224;
   --danger-muted: var(--q-crimson-wash);
   --success: var(--q-pine);
   --success-muted: var(--q-pine-wash);
@@ -96,6 +98,8 @@
   --struct-muted: #1d2a36;
 
   --danger: #ef8d9b;
+  --danger-hover: #f4a9b4;
+  --danger-active: #f4a9b4;
   --danger-muted: #3a1a20;
   --success: #7cc9a5;
   --success-muted: #12291f;
