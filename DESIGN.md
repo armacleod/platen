@@ -90,12 +90,83 @@ Body measure 60–68ch. Kickers are 1–4 words uppercase. Never all-caps paragr
 
 ## Layout and space
 
-8px base. `--s-01` 2 through `--s-12` 96. Page max 76rem, gutter 16px,
-page margin 32px (16px mobile). Related items sit 8–12px apart.
-Groups sit 32–48px apart. Sections sit 64–96px apart.
+Space is a token. Alignment is a rule. Parent containers own gaps.
+Children do not add margins in compositions.
+
+Scale: 8px base. `--s-01` 2 through `--s-12` 96. Page max 76rem,
+gutter 16px, page margin 32px (16px mobile). Related items sit
+8–12px apart (`--s-03`, `--s-04`). Groups sit 24–32px apart
+(`--s-06`, `--s-07`). Sections sit 64–96px apart (`--s-10`, `--s-12`).
+
+### Spacing ownership
+
+- The parent sets `gap`. Children set `margin: 0`.
+- Never combine parent `gap` with child bottom margins in the same axis.
+  Double spacing drifts baselines and breaks the grid.
+- Type styles carry reading margins (`p`, `h1–h3`). Reset to `margin: 0`
+  when type is used as a label inside a component (field label, caption,
+  badge text). The component gap then owns the rhythm.
+
+### Stack and row
+
+Use two compositions only.
+
+- **Stack**: vertical `display: flex; flex-direction: column`. Owns
+  label-to-input (`--s-02`), input-to-help (`--s-02`), and
+  group spacing (`--s-05` to `--s-07`).
+- **Row (cluster)**: horizontal `display: flex; flex-wrap: wrap;
+  gap: var(--s-04)`. Wrap is required. Pick alignment by content:
+
+| Row content | `align-items` | Why |
+|---|---|---|
+| Single-line controls (buttons, badges of one size) | `center` | Shared center line reads as one toolbar |
+| Mixed-size controls shown as a ramp | `flex-end` | Shared bottom line proves the size steps |
+| Form fields with labels, hints, or errors | `flex-start` | Shared top line; help text extends down without lifting inputs |
+| Cards, notices, panels with different copy lengths | `stretch` | Equal height; inner content starts at the top |
+
+Default to `flex-start` when unsure. `center` is only for rows
+where every item is one line and the same height. Never use `center`
+to align multi-line cards. Never use `flex-end` to align fields:
+the taller field (with help or error) pulls its input out of line.
+
+### Form rows
+
+Tether to the top line.
+
+- Row uses `align-items: flex-start`.
+- Each field is a stack: label, input, then help or error. Help and
+  error occupy the same slot below the input so swapping them does
+  not move the input.
+- Error uses a 2px border with `box-sizing: border-box` at the same
+  outer `height` as rest, so invalid does not shift the row.
+- Reserve the help slot only when rows must not move at all
+  (dense tables, dialogs). Otherwise let help extend the field down.
+
+### Card rows
+
+Tether to the top line and stretch to equal height.
+
+- Row uses `align-items: stretch`.
+- Each card uses `min-width: 16rem; flex: 1` so wrapping keeps
+  a readable measure.
+- Inside the card, content starts at the top (`align-items: start`
+  or default block flow). Anchor bars (`Notice`) span full height.
+- Do not vertically center card bodies. Centering leaves both the
+  top and bottom edges floating, so no edge proves alignment.
+
+### Grid
 
 Grid: 12 columns, Swiss asymmetric placement. Media spans fields.
-A visible grid overlay is part of the specimen to prove alignment.
+Gutter is `--gutter` (16px). A visible grid overlay is part of the
+specimen to prove alignment. Grid children align to `start` unless
+a hero explicitly centers one band.
+
+### Type in compositions
+
+Kickers, badges, and captions use `margin: 0` inside fields, notices,
+and panels. The specimen resets `.field .kicker` and `.notice strong`
+spacing for this reason. Body copy keeps its reading margins outside
+compositions only.
 
 Radius: 0 for sheets and tables, 2px for inputs and buttons,
 999px for badges only. Bars: 8px strong rule as anchor, 1px hairlines for tables.

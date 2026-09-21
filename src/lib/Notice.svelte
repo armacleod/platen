@@ -16,14 +16,18 @@
     display: grid;
     grid-template-columns: 4px 1fr;
     gap: var(--s-04);
+    align-items: start;
     border: var(--rule);
     background: var(--bg-raised);
     padding: var(--s-04) var(--s-05);
     font: var(--type-ui);
+    min-width: 0;
   }
 
   .bar {
     background: var(--struct);
+    align-self: stretch;
+    min-height: 100%;
   }
 
   .danger .bar {
@@ -39,8 +43,7 @@
   }
 
   strong {
-    display: block;
     font-weight: 600;
-    margin-bottom: var(--s-02);
+    margin-right: 0.35em;
   }
 </style>
