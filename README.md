@@ -2,7 +2,7 @@
 
 A design system for sites and Svelte apps: the ledger and the void.
 
-**Specimen:** [armacleod.github.io/quire](https://armacleod.github.io/quire)
+**Specimen:** [armacleod.github.io/platen](https://armacleod.github.io/platen)
 **Spec:** [DESIGN.md](./DESIGN.md)
 
 A sheet field for work, a void field for orientation. Every page uses both.
