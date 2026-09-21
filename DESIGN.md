@@ -33,8 +33,9 @@ No off-white and process-red slabs. No amber CRT night.
    pass 4.5:1 minimum. Focus rings pass 3:1 against adjacent grounds.
    Danger behaves like an e-stop: always solid, always legible; hover moves
    toward alarm (brighter), never toward wash. No hover state anywhere in the
-   system may drop below 4.5:1. Void grounds carry explicit values, never
-   page-theme variables, so a theme switch cannot silently recolor them.
+   system may drop below 4.5:1. Void grounds are explicitly scoped with a
+   nested data-theme (or fixed values) so a page-theme switch cannot silently
+   recolor them; components inside a scoped ground read that ground's tokens.
 
 ## Color
 
