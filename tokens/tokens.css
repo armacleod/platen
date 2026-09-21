@@ -48,9 +48,9 @@
   --struct: var(--q-slate);
   --struct-muted: var(--q-slate-mist);
 
-  --danger: var(--q-crimson);
-  --danger-hover: #7d1224;
-  --danger-active: #7d1224;
+  --danger: #7d1224;
+  --danger-hover: #c8102e;
+  --danger-active: #5c0e1a;
   --danger-muted: var(--q-crimson-wash);
   --success: var(--q-pine);
   --success-muted: var(--q-pine-wash);
@@ -97,10 +97,10 @@
   --struct: #9fb2c3;
   --struct-muted: #1d2a36;
 
-  --danger: #ef8d9b;
-  --danger-hover: #f4a9b4;
-  --danger-active: #f4a9b4;
-  --danger-muted: #3a1a20;
+  --danger: #e8384f;
+  --danger-hover: #ff5c6c;
+  --danger-active: #b92a3a;
+  --danger-muted: #200a0e;
   --success: #7cc9a5;
   --success-muted: #12291f;
 

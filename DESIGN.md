@@ -112,8 +112,9 @@ Every component reads tokens only. Sizes sm/md/lg where applicable.
 Minimum target 24px; buttons ship 28/40/48px.
 
 - **Button**: primary (ember fill), secondary (strong-rule outline),
-  ghost (accent text), danger (crimson outline at rest so it never reads as
-  primary; wash on hover, solid fill on active). Explicit hover and active tokens.
+  ghost (accent text), danger (solid deep-crimson fill, darker and cooler than
+  ember so the two never read alike; hover jumps to vivid signal red,
+  active drops to near-black maroon). Explicit hover and active tokens.
 - **Field**: raised fill, hairline, label above, 2px focus ring offset 2px,
   2px danger rule with caption on error.
 - **Badge**: uppercase mono-adjacent label, full radius, four tones.

@@ -75,15 +75,15 @@
   }
 
   .danger {
-    background: transparent;
-    color: var(--danger);
+    background: var(--danger);
     border-color: var(--danger);
+    color: #fff;
   }
 
   .danger:hover:not(:disabled) {
-    background: var(--danger-muted);
+    background: var(--danger-hover);
     border-color: var(--danger-hover);
-    color: var(--danger-hover);
+    color: #fff;
   }
 
   .danger:active:not(:disabled) {
@@ -92,7 +92,7 @@
     color: #fff;
   }
 
-  [data-theme="void"] .danger:active:not(:disabled) {
+  [data-theme="void"] .danger:not(:active):not(:disabled) {
     color: var(--q-void);
   }
 
