@@ -189,7 +189,10 @@ fragment bars, dotted leaders. No orbits, no radar sweeps, no glow.
 Every component reads tokens only. Sizes sm/md/lg where applicable.
 Minimum target 24px; buttons ship 28/40/48px.
 
-- **Button**: primary (ember fill), secondary (strong-rule outline),
+- **Button**: primary (ember fill), secondary (strong-rule outline, rests
+  transparent; hover and active read `--button-secondary-hover` and
+  `--button-secondary-active` so the state change stays visible on both
+  themes),
   ghost (accent text), danger (inverse-field rest, signal-red hover and
   active; cold at rest so it cannot read as primary, armed on contact).
   Destructive actions use destructive verbs.

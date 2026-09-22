@@ -69,6 +69,11 @@
   --button-danger-fg: var(--fg-inverse);
   --button-danger-hover: #c8102e;
   --button-danger-active: #5c0e1a;
+  /* Secondary rests transparent so the strong rule carries it. Hover and
+     active use dedicated fills: bg-subtle alone is 1.1:1 against bg and
+     reads as no change, so these step further while keeping text above 8:1. */
+  --button-secondary-hover: #d9d5c7;
+  --button-secondary-active: #c6c2b4;
   --field-bg: var(--bg-raised);
   --field-border: var(--border);
 
@@ -121,6 +126,11 @@
   --button-danger-fg: var(--fg-inverse);
   --button-danger-hover: #c8102e;
   --button-danger-active: #5c0e1a;
+  /* Same contract as sheet: hover visibly lifts off bg, active steps
+     further. Void bg-subtle is 1.1:1 against bg, so these use slate-tinted
+     fills that keep void text above 8:1. */
+  --button-secondary-hover: #2e3843;
+  --button-secondary-active: #3d4652;
   --field-bg: var(--bg-subtle);
   --field-border: var(--border);
 

@@ -60,7 +60,11 @@
   }
 
   .secondary:hover:not(:disabled) {
-    background: var(--bg-subtle);
+    background: var(--button-secondary-hover);
+  }
+
+  .secondary:active:not(:disabled) {
+    background: var(--button-secondary-active);
   }
 
   .ghost {
